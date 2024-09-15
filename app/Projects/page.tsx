@@ -7,7 +7,9 @@ export default async function Page() {
   return (
     <div className="bg-black">
       <div className="pt-20 pb-10">
-        <p className="text-4xl text-center font-bold">All Projects</p>
+        <p className="text-4xl text-center font-bold text-white">
+          All Projects
+        </p>
         <p className="text-center text-slate-300 p-4 mx-auto md:px-40 max-md:px-10">
           Over the years, I&apos;ve worked on a variety of projects that
           showcase my versatility as a developer. From building full-stack web
