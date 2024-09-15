@@ -9,7 +9,9 @@ export default function Hero() {
       id="Home"
       className="min-h-screen w-screen flex justify-center items-start flex-col md:px-40 max-md:px-5 bg-black"
     >
-      <p className="text-7xl font-bold pt-5 max-md:text-5xl">Ayush Bahuguna</p>
+      <p className="text-7xl font-bold pt-5 max-md:text-5xl text-white">
+        Ayush Bahuguna
+      </p>
       <p className="text-7xl font-bold pt-5 text-slate-400  text-balance max-md:text-5xl">
         I design and develop innovative digital solutions.
       </p>
