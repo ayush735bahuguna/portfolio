@@ -15,7 +15,7 @@ export default function Hero() {
       <p className="text-7xl font-bold pt-5 text-slate-400  text-balance max-md:text-5xl">
         I design and develop innovative digital solutions.
       </p>
-      <p className="pt-5">
+      <p className="pt-5 text-white">
         I am a versatile tech enthusiast — continuously evolving as a Full-stack
         developer and Android developer, driven by a passion for learning and
         creating impactful digital experiences.

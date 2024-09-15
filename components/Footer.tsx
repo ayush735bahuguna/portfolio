@@ -20,7 +20,7 @@ export default function Footer() {
       </Link>
 
       <div>
-        <div className="flex gap-6 flex-row">
+        <div className="flex gap-6 flex-row text-white">
           <Link href={"https://github.com/ayush735bahuguna"} target="_blank">
             <GithubIcon />
           </Link>

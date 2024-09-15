@@ -10,7 +10,7 @@ export default function Contact() {
       className="w-screen flex justify-between flex-col md:px-40 max-md:px-5 bg-black"
     >
       <div className="py-20">
-        <p className="text-4xl text-center font-bold">Contact Me</p>
+        <p className="text-4xl text-center font-bold text-white">Contact Me</p>
         <p className="text-center text-slate-300 p-4 pb-10">
           Let&apos;s Build Something Amazing Together
         </p>

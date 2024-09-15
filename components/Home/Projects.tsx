@@ -12,7 +12,9 @@ export default function Projects() {
       className="min-h-screen w-screen border-b-2 border-gray-800 bg-black"
     >
       <div className="py-20">
-        <p className="text-4xl text-center font-bold">Featured Projects</p>
+        <p className="text-4xl text-center font-bold text-white">
+          Featured Projects
+        </p>
         <p className="text-center text-slate-300 p-4">
           Focused on the experience, driven by the engineering.
         </p>
@@ -96,7 +98,7 @@ export default function Projects() {
 
       <Link
         href={"/Projects"}
-        className="flex p-5 justify-center items-center flex-row my-10 w-screen hover:underline gap-3 cursor-pointer"
+        className="flex p-5 justify-center items-center flex-row my-10 w-screen hover:underline gap-3 cursor-pointer text-white"
       >
         <p>More Projects</p>
         <ArrowRight size={17} />
