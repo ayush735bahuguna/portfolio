@@ -7,7 +7,7 @@ export default function Contact() {
   return (
     <div
       id="Contact"
-      className="w-screen flex justify-between flex-col md:px-40 max-md:px-5"
+      className="w-screen flex justify-between flex-col md:px-40 max-md:px-5 bg-black"
     >
       <div className="py-20">
         <p className="text-4xl text-center font-bold">Contact Me</p>

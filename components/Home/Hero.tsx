@@ -7,7 +7,7 @@ export default function Hero() {
   return (
     <div
       id="Home"
-      className="min-h-screen w-screen flex justify-center items-start flex-col md:px-40 max-md:px-5"
+      className="min-h-screen w-screen flex justify-center items-start flex-col md:px-40 max-md:px-5 bg-black"
     >
       <p className="text-7xl font-bold pt-5 max-md:text-5xl">Ayush Bahuguna</p>
       <p className="text-7xl font-bold pt-5 text-slate-400  text-balance max-md:text-5xl">
@@ -37,7 +37,7 @@ export default function Hero() {
           target="_blank"
           className={"m-2 "}
         >
-          <Button variant={"secondary"} className={"m-2"}>
+          <Button variant={"secondary"} className={"m-2 bg-white"}>
             <Download size={17} /> &nbsp; Resume
           </Button>
         </Link>

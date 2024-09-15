@@ -9,7 +9,7 @@ export default function Projects() {
   return (
     <div
       id="Projects"
-      className="min-h-screen w-screen border-b-2 border-gray-800"
+      className="min-h-screen w-screen border-b-2 border-gray-800 bg-black"
     >
       <div className="py-20">
         <p className="text-4xl text-center font-bold">Featured Projects</p>

@@ -5,7 +5,7 @@ import { ProjectData } from "@/lib/constants";
 
 export default async function Page() {
   return (
-    <div>
+    <div className="bg-black">
       <div className="pt-20 pb-10">
         <p className="text-4xl text-center font-bold">All Projects</p>
         <p className="text-center text-slate-300 p-4 mx-auto md:px-40 max-md:px-10">
@@ -19,7 +19,7 @@ export default async function Page() {
           functionality, performance, and design.
         </p>
       </div>
-      <div className="p-5 flex items-center justify-center flex-wrap pb-10">
+      <div className="md:p-5 flex items-center justify-center flex-wrap pb-10">
         {ProjectData?.map(
           (
             item: {

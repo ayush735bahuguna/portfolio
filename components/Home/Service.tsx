@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Services() {
   return (
-    <div className="min-h-screen w-screen flex justify-center items-center flex-row flex-wrap-reverse md:px-40 max-md:px-5 border-b-2 border-gray-800 pb-20">
+    <div className="min-h-screen w-screen flex justify-center items-center flex-row flex-wrap-reverse md:px-40 max-md:px-5 border-b-2 border-gray-800 pb-20 bg-black">
       <div className="flex justify-between max-md:items-center flex-col items-start md:w-1/2">
         <p className="mt-10 mb-5 text-4xl cursor-scale small text-balance font-semibold max-md:px-5  max-md:text-center">
           Here’s what you can expect from me

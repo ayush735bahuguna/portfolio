@@ -24,7 +24,7 @@ export default function ProjectCard({
   return (
     <div className=" bg-slate-800 rounded-2xl p-5 my-4 flex flex-row items-center justify-between  flex-wrap-reverse md:mx-10">
       <div className="sm:w-1/2 max-sm:w-full">
-        <p className="text-2xl font-semibold">{name}</p>
+        <p className="text-2xl font-semibold text-white">{name}</p>
         <p className="text-slate-400 py-2">{description}</p>
 
         <div className="flex flex-wrap">

@@ -5,7 +5,7 @@ import { Button } from "./ui/button";
 
 export default function Footer() {
   return (
-    <div className="w-screen flex p-5 justify-between items-center">
+    <div className="w-screen flex p-5 justify-between items-center bg-black">
       <Button variant={"link"} className="text-white">
         Ayush bahuguna
       </Button>

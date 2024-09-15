@@ -18,7 +18,10 @@ export default function ProjectCard({
   return (
     <div className="flex bg-slate-800 justify-center items-center m-1 rounded-lg w-screen max-md:flex-col-reverse">
       <div className="rounded-lg p-4 md:w-1/2">
-        <div style={{ fontWeight: 700 }} className="text-2xl py-3 ms-2">
+        <div
+          style={{ fontWeight: 700 }}
+          className="text-2xl py-3 ms-2 text-white"
+        >
           {data.Name}
         </div>
         <div className="text-sm text-slate-300 ms-2">{data.Description}</div>

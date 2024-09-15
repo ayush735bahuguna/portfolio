@@ -13,7 +13,7 @@ export default function Skills() {
       }}
     >
       <div className="pt-20 pb-10">
-        <p className="text-4xl text-center font-bold">Technical</p>
+        <p className="text-4xl text-center font-bold text-white">Technical</p>
         <p className="text-center text-slate-300 p-4">
           As a versatile developer, I design and build impactful digital
           solutions with a wide array of modern technologies and frameworks.
@@ -22,7 +22,7 @@ export default function Skills() {
 
       <div className="p-5">
         <div className="p-5 rounded-3xl bg-black md:w-2/3 m-auto mb-5">
-          <p className="text-2xl font-semibold pb-3">
+          <p className="text-2xl font-semibold pb-3 text-white">
             Technologies I love to build with
           </p>
           <p className=" text-slate-300">
@@ -51,7 +51,7 @@ export default function Skills() {
         </div>
 
         <div className="p-5 rounded-3xl bg-black md:w-2/3 m-auto my-5">
-          <p className="text-2xl font-semibold pb-3">
+          <p className="text-2xl font-semibold pb-3 text-white">
             Software I love to work with
           </p>
           <p className=" text-slate-300">
