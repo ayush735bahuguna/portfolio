@@ -1,5 +1,6 @@
 import project1 from "@/app/assets/projects/MERN notes.png";
 import project2 from "@/app/assets/projects/Magic-pictures.png";
+import project3 from "@/app/assets/projects/Nextjs notes.png";
 import project4 from "@/app/assets/projects/chat-link.png";
 import project5 from "@/app/assets/projects/movie-adda.png";
 import project6 from "@/app/assets/projects/dropbox-clone1.png";
@@ -9,6 +10,7 @@ import project9 from "@/app/assets/projects/Google form.png";
 import project10 from "@/app/assets/projects/auth.png";
 import project11 from "@/app/assets/projects/wallywals.png";
 import project12 from "@/app/assets/projects/food recipie.png";
+import project13 from "@/app/assets/projects/messanger ui.png";
 import { StaticImageData } from "next/image";
 
 export const SkillJSON: { name: string; link: string }[] = [
@@ -130,6 +132,7 @@ export const ProjectData: {
   Description: string;
   imgUrl: StaticImageData;
   url: string;
+  GithubLink: string;
   Technologies: { name: string; link: string }[];
 }[] = [
   {
@@ -164,39 +167,7 @@ export const ProjectData: {
         link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
       },
     ],
-  },
-  {
-    Name: "MERN Notes App",
-    Description:
-      "Developed a feature-rich single-page note-taking application using the MERN stack (MongoDB, Express.js, React.js, Node.js). The app enables users to effortlessly manage their notes and profiles with key features including:User profile creation and management Ability to create, edit, and delete notes Search functionality to find notes by title Secure storage of notes in a MongoDB database This project highlights my expertise in full-stack development, focusing on user-friendly design, security, and scalability.",
-    imgUrl: project1,
-    url: "https://note-quick.netlify.app/",
-    Technologies: [
-      {
-        name: "React Js",
-        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
-      },
-      {
-        name: "Node Js",
-        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg",
-      },
-      {
-        name: "express Js",
-        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg",
-      },
-      {
-        name: "Bootstrap",
-        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg",
-      },
-      {
-        name: "Mongo DB",
-        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
-      },
-      {
-        name: "JavaScript",
-        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
-      },
-    ],
+    GithubLink: "https://github.com/ayush735bahuguna/MERN-chat-app",
   },
   {
     Name: "Movie-adda",
@@ -218,6 +189,7 @@ export const ProjectData: {
         link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
       },
     ],
+    GithubLink: "https://github.com/ayush735bahuguna/movie-adda",
   },
   {
     Name: "Dropbox-clone",
@@ -243,6 +215,7 @@ export const ProjectData: {
         link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
       },
     ],
+    GithubLink: "https://github.com/ayush735bahuguna/dropbox-clone",
   },
   {
     Name: "Magic Pictures",
@@ -264,107 +237,7 @@ export const ProjectData: {
         link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
       },
     ],
-  },
-  {
-    Name: "Event website",
-    Description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam quia voluptate eaque quo sequi quod autem quibusdam provident, reiciendis cumque nobis nihil earum deleniti incidunt laborum, soluta cum, accusamus amet dolor? Blanditiis nobis ullam aut dolores voluptate vel quae repellat doloremque perspiciatis rem corrupti, unde voluptatem quas quos sapiente voluptas tenetur ad hic excepturi aperiam eos dignissimos consequuntur, vero itaque. Deleniti sint ullam iure reiciendis, iste voluptatem. Praesentium, distinctio maxime, porro nesciunt neque ipsum sapiente dicta quam aliquam dolorem maiores dolores. In, ducimus aperiam",
-    imgUrl: project7,
-    url: "https://colosseum24.vercel.app/",
-    Technologies: [
-      {
-        name: "Next Js",
-        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
-      },
-      {
-        name: "Tailwind",
-        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
-      },
-      {
-        name: "Typescript",
-        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-plain.svg",
-      },
-    ],
-  },
-  {
-    Name: "Food Recipe App",
-    Description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam quia voluptate eaque quo sequi quod autem quibusdam provident, reiciendis cumque nobis nihil earum deleniti incidunt laborum, soluta cum, accusamus amet dolor? Blanditiis nobis ullam aut dolores voluptate vel quae repellat doloremque perspiciatis rem corrupti, unde voluptatem quas quos sapiente voluptas tenetur ad hic excepturi aperiam eos dignissimos consequuntur, vero itaque. Deleniti sint ullam iure reiciendis, iste voluptatem. Praesentium, distinctio maxime, porro nesciunt neque ipsum sapiente dicta quam aliquam dolorem maiores dolores. In, ducimus aperiam",
-    imgUrl: project12,
-    url: "https://expo.dev/@ayushbahuguna1122/foodApp",
-    Technologies: [
-      {
-        name: "React Native",
-        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
-      },
-      {
-        name: "Tailwind",
-        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
-      },
-    ],
-  },
-  {
-    Name: "Wallywalls wallpaper app",
-    Description:
-      "Wallywalls is an Android app that provides users with access to a curated collection of high-resolution wallpapers sourced from the Unsplash API. With a sleek and user-friendly interface, the app offers the following features: Browse a vast collection of stunning wallpapers in various categories Search for specific wallpapers by keyword or category to personalize your device This project highlights my expertise in mobile app development using React Native and API integration to deliver dynamic content.",
-    imgUrl: project11,
-    url: "",
-    Technologies: [
-      {
-        name: "React Native",
-        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
-      },
-      {
-        name: "Tailwind",
-        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
-      },
-    ],
-  },
-  {
-    Name: "Image gallery socket-io",
-    Description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam quia voluptate eaque quo sequi quod autem quibusdam provident, reiciendis cumque nobis nihil earum deleniti incidunt laborum, soluta cum, accusamus amet dolor? Blanditiis nobis ullam aut dolores voluptate vel quae repellat doloremque perspiciatis rem corrupti, unde voluptatem quas quos sapiente voluptas tenetur ad hic excepturi aperiam eos dignissimos consequuntur, vero itaque. Deleniti sint ullam iure reiciendis, iste voluptatem. Praesentium, distinctio maxime, porro nesciunt neque ipsum sapiente dicta quam aliquam dolorem maiores dolores. In, ducimus aperiam",
-    imgUrl: project8,
-    url: "https://gallery-socket-io.vercel.app/",
-    Technologies: [
-      {
-        name: "Next Js",
-        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
-      },
-      {
-        name: "React Native",
-        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
-      },
-      {
-        name: "Material ui",
-        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/materialui/materialui-original.svg",
-      },
-      {
-        name: "Socket.io",
-        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/socketio/socketio-original.svg",
-      },
-    ],
-  },
-  {
-    Name: "Custom Google form",
-    Description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam quia voluptate eaque quo sequi quod autem quibusdam provident, reiciendis cumque nobis nihil earum deleniti incidunt laborum, soluta cum, accusamus amet dolor? Blanditiis nobis ullam aut dolores voluptate vel quae repellat doloremque perspiciatis rem corrupti, unde voluptatem quas quos sapiente voluptas tenetur ad hic excepturi aperiam eos dignissimos consequuntur, vero itaque. Deleniti sint ullam iure reiciendis, iste voluptatem. Praesentium, distinctio maxime, porro nesciunt neque ipsum sapiente dicta quam aliquam dolorem maiores dolores. In, ducimus aperiam",
-    imgUrl: project9,
-    url: "https://acknowledgment.netlify.app/",
-    Technologies: [
-      {
-        name: "Html",
-        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
-      },
-      {
-        name: "Css",
-        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
-      },
-      {
-        name: "JavaScript",
-        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
-      },
-    ],
+    GithubLink: "https://github.com/ayush735bahuguna/picture",
   },
   {
     Name: "Custom Authentication MERN",
@@ -398,12 +271,224 @@ export const ProjectData: {
         link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
       },
     ],
+    GithubLink: "https://github.com/ayush735bahuguna/login-next-js",
   },
-  // {
-  //   Name: "Next js Notes app",
-  //   Description:
-  //     "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam quia voluptate eaque quo sequi quod autem quibusdam provident, reiciendis cumque nobis nihil earum deleniti incidunt laborum, soluta cum, accusamus amet dolor? Blanditiis nobis ullam aut dolores voluptate vel quae repellat doloremque perspiciatis rem corrupti, unde voluptatem quas quos sapiente voluptas tenetur ad hic excepturi aperiam eos dignissimos consequuntur, vero itaque. Deleniti sint ullam iure reiciendis, iste voluptatem. Praesentium, distinctio maxime, porro nesciunt neque ipsum sapiente dicta quam aliquam dolorem maiores dolores. In, ducimus aperiam",
-  //   imgUrl: project11,
-  //   url: "https://notes-next-js-pink.vercel.app/",
-  // },
+  {
+    Name: "Event website",
+    Description:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam quia voluptate eaque quo sequi quod autem quibusdam provident, reiciendis cumque nobis nihil earum deleniti incidunt laborum, soluta cum, accusamus amet dolor? Blanditiis nobis ullam aut dolores voluptate vel quae repellat doloremque perspiciatis rem corrupti, unde voluptatem quas quos sapiente voluptas tenetur ad hic excepturi aperiam eos dignissimos consequuntur, vero itaque. Deleniti sint ullam iure reiciendis, iste voluptatem. Praesentium, distinctio maxime, porro nesciunt neque ipsum sapiente dicta quam aliquam dolorem maiores dolores. In, ducimus aperiam",
+    imgUrl: project7,
+    url: "https://colosseum24.vercel.app/",
+    Technologies: [
+      {
+        name: "Next Js",
+        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
+      },
+      {
+        name: "Tailwind",
+        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+      },
+      {
+        name: "Typescript",
+        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-plain.svg",
+      },
+    ],
+    GithubLink: "https://github.com/ayush735bahuguna/colosseum",
+  },
+  {
+    Name: "Food Recipe App",
+    Description:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam quia voluptate eaque quo sequi quod autem quibusdam provident, reiciendis cumque nobis nihil earum deleniti incidunt laborum, soluta cum, accusamus amet dolor? Blanditiis nobis ullam aut dolores voluptate vel quae repellat doloremque perspiciatis rem corrupti, unde voluptatem quas quos sapiente voluptas tenetur ad hic excepturi aperiam eos dignissimos consequuntur, vero itaque. Deleniti sint ullam iure reiciendis, iste voluptatem. Praesentium, distinctio maxime, porro nesciunt neque ipsum sapiente dicta quam aliquam dolorem maiores dolores. In, ducimus aperiam",
+    imgUrl: project12,
+    url: "https://expo.dev/@ayushbahuguna1122/foodApp",
+    Technologies: [
+      {
+        name: "React Native",
+        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+      },
+      {
+        name: "Tailwind",
+        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+      },
+    ],
+    GithubLink: "https://github.com/ayush735bahuguna/foodApp-reactNative",
+  },
+  {
+    Name: "Wallywalls wallpaper app",
+    Description:
+      "Wallywalls is an Android app that provides users with access to a curated collection of high-resolution wallpapers sourced from the Unsplash API. With a sleek and user-friendly interface, the app offers the following features: Browse a vast collection of stunning wallpapers in various categories Search for specific wallpapers by keyword or category to personalize your device This project highlights my expertise in mobile app development using React Native and API integration to deliver dynamic content.",
+    imgUrl: project11,
+    url: "#",
+    Technologies: [
+      {
+        name: "React Native",
+        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+      },
+      {
+        name: "Tailwind",
+        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+      },
+    ],
+    GithubLink: "https://github.com/ayush735bahuguna/wallywalls",
+  },
+  {
+    Name: "Image gallery socket-io",
+    Description:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam quia voluptate eaque quo sequi quod autem quibusdam provident, reiciendis cumque nobis nihil earum deleniti incidunt laborum, soluta cum, accusamus amet dolor? Blanditiis nobis ullam aut dolores voluptate vel quae repellat doloremque perspiciatis rem corrupti, unde voluptatem quas quos sapiente voluptas tenetur ad hic excepturi aperiam eos dignissimos consequuntur, vero itaque. Deleniti sint ullam iure reiciendis, iste voluptatem. Praesentium, distinctio maxime, porro nesciunt neque ipsum sapiente dicta quam aliquam dolorem maiores dolores. In, ducimus aperiam",
+    imgUrl: project8,
+    url: "https://gallery-socket-io.vercel.app/",
+    Technologies: [
+      {
+        name: "Next Js",
+        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
+      },
+      {
+        name: "React Native",
+        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+      },
+      {
+        name: "Material ui",
+        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/materialui/materialui-original.svg",
+      },
+      {
+        name: "Socket.io",
+        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/socketio/socketio-original.svg",
+      },
+    ],
+    GithubLink: "https://github.com/ayush735bahuguna/gallery-socket.io",
+  },
+  {
+    Name: "Custom Google form",
+    Description:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam quia voluptate eaque quo sequi quod autem quibusdam provident, reiciendis cumque nobis nihil earum deleniti incidunt laborum, soluta cum, accusamus amet dolor? Blanditiis nobis ullam aut dolores voluptate vel quae repellat doloremque perspiciatis rem corrupti, unde voluptatem quas quos sapiente voluptas tenetur ad hic excepturi aperiam eos dignissimos consequuntur, vero itaque. Deleniti sint ullam iure reiciendis, iste voluptatem. Praesentium, distinctio maxime, porro nesciunt neque ipsum sapiente dicta quam aliquam dolorem maiores dolores. In, ducimus aperiam",
+    imgUrl: project9,
+    url: "https://acknowledgment.netlify.app/",
+    Technologies: [
+      {
+        name: "Html",
+        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
+      },
+      {
+        name: "Css",
+        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
+      },
+      {
+        name: "JavaScript",
+        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+      },
+    ],
+    GithubLink: "https://github.com/ayush735bahuguna/Google-Form--Custom",
+  },
+  {
+    Name: "React js Notes App V1",
+    Description:
+      "Developed a feature-rich single-page note-taking application using the MERN stack (MongoDB, Express.js, React.js, Node.js). The app enables users to effortlessly manage their notes and profiles with key features including:User profile creation and management Ability to create, edit, and delete notes Search functionality to find notes by title Secure storage of notes in a MongoDB database This project highlights my expertise in full-stack development, focusing on user-friendly design, security, and scalability.",
+    imgUrl: project1,
+    url: "https://note-quick.netlify.app/",
+    Technologies: [
+      {
+        name: "React Js",
+        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+      },
+      {
+        name: "Node Js",
+        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg",
+      },
+      {
+        name: "express Js",
+        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg",
+      },
+      {
+        name: "Bootstrap",
+        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg",
+      },
+      {
+        name: "Mongo DB",
+        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
+      },
+      {
+        name: "JavaScript",
+        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+      },
+    ],
+    GithubLink: "https://github.com/ayush735bahuguna/MERN-Notes",
+  },
+  {
+    Name: "Next js Notes app V2",
+    Description:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam quia voluptate eaque quo sequi quod autem quibusdam provident, reiciendis cumque nobis nihil earum deleniti incidunt laborum, soluta cum, accusamus amet dolor? Blanditiis nobis ullam aut dolores voluptate vel quae repellat doloremque perspiciatis rem corrupti, unde voluptatem quas quos sapiente voluptas tenetur ad hic excepturi aperiam eos dignissimos consequuntur, vero itaque. Deleniti sint ullam iure reiciendis, iste voluptatem. Praesentium, distinctio maxime, porro nesciunt neque ipsum sapiente dicta quam aliquam dolorem maiores dolores. In, ducimus aperiam",
+    imgUrl: project3,
+    url: "https://notes-next-js-pink.vercel.app/",
+    Technologies: [
+      {
+        name: "React Js",
+        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+      },
+      {
+        name: "Node Js",
+        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg",
+      },
+      {
+        name: "express Js",
+        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg",
+      },
+      {
+        name: "Bootstrap",
+        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg",
+      },
+      {
+        name: "Mongo DB",
+        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
+      },
+      {
+        name: "JavaScript",
+        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+      },
+    ],
+    GithubLink: "https://github.com/ayush735bahuguna/Notes-nextJs",
+  },
+  {
+    Name: "Chat App UI",
+    Description:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam quia voluptate eaque quo sequi quod autem quibusdam provident, reiciendis cumque nobis nihil earum deleniti incidunt laborum, soluta cum, accusamus amet dolor? Blanditiis nobis ullam aut dolores voluptate vel quae repellat doloremque perspiciatis rem corrupti, unde voluptatem quas quos sapiente voluptas tenetur ad hic excepturi aperiam eos dignissimos consequuntur, vero itaque. Deleniti sint ullam iure reiciendis, iste voluptatem. Praesentium, distinctio maxime, porro nesciunt neque ipsum sapiente dicta quam aliquam dolorem maiores dolores. In, ducimus aperiam",
+    imgUrl: project13,
+    url: "https://messenger-mern-next.vercel.app/",
+    Technologies: [
+      {
+        name: "Next Js",
+        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
+      },
+      {
+        name: "Tailwind",
+        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+      },
+      {
+        name: "Typescript",
+        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-plain.svg",
+      },
+    ],
+    GithubLink: "https://github.com/ayush735bahuguna/messenger-nextjs",
+  },
+  {
+    Name: "Chat Bot UI",
+    Description:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam quia voluptate eaque quo sequi quod autem quibusdam provident, reiciendis cumque nobis nihil earum deleniti incidunt laborum, soluta cum, accusamus amet dolor? Blanditiis nobis ullam aut dolores voluptate vel quae repellat doloremque perspiciatis rem corrupti, unde voluptatem quas quos sapiente voluptas tenetur ad hic excepturi aperiam eos dignissimos consequuntur, vero itaque. Deleniti sint ullam iure reiciendis, iste voluptatem. Praesentium, distinctio maxime, porro nesciunt neque ipsum sapiente dicta quam aliquam dolorem maiores dolores. In, ducimus aperiam",
+    imgUrl: project13,
+    url: "https://chat-bot-ui-two.vercel.app/",
+    Technologies: [
+      {
+        name: "Next Js",
+        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
+      },
+      {
+        name: "Tailwind",
+        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+      },
+      {
+        name: "Typescript",
+        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-plain.svg",
+      },
+    ],
+    GithubLink: "https://github.com/ayush735bahuguna/chat-bot---ui",
+  },
 ];

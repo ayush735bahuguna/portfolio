@@ -29,6 +29,7 @@ export default async function Page() {
               Description: string;
               imgUrl: StaticImageData;
               url: string;
+              GithubLink: string;
               Technologies: { name: string; link: string }[];
             },
             index

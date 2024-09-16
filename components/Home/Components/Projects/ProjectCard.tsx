@@ -22,8 +22,8 @@ export default function ProjectCard({
   visiblity: "public" | "private";
 }) {
   return (
-    <div className=" bg-slate-800 rounded-2xl p-5 my-4 flex flex-row items-center justify-between  flex-wrap-reverse md:mx-10">
-      <div className="sm:w-1/2 max-sm:w-full">
+    <div className=" bg-slate-800 rounded-2xl p-5 my-4 flex flex-row items-center justify-between max-md:justify-center flex-wrap-reverse md:mx-10">
+      <div className="md:w-1/2 max-md:w-full">
         <p className="text-2xl font-semibold text-white">{name}</p>
         <p className="text-slate-400 py-2">{description}</p>
 
@@ -79,7 +79,7 @@ export default function ProjectCard({
       </div>
       <Image
         src={imageUrl}
-        className="sm:w-1/2 max-sm:w-full h-auto max-w-[500px]"
+        className="md:w-1/2 max-md:w-full h-auto max-w-[500px]"
         alt=""
       />
     </div>
