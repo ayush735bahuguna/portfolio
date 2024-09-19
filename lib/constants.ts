@@ -192,11 +192,11 @@ export const ProjectData: {
     GithubLink: "https://github.com/ayush735bahuguna/movie-adda",
   },
   {
-    Name: "Dropbox-clone",
+    Name: "SafeDrive",
     Description:
-      "The Dropbox Clone is a cloud storage web application designed to mimic the core functionalities of Dropbox. Built using modern web technologies, it allows users to securely store, manage, and access files online. Key features include: User authentication for secure file management Upload, download, and delete files with ease Organize files in folders for better management Real-time file synchronization across devices Responsive design for a seamless experience on both desktop and mobile This project demonstrates my full-stack development capabilities, focusing on file management, cloud storage solutions, and user authentication.",
+      "The SafeDrive is a cloud storage web application designed to mimic the core functionalities of Dropbox. Built using modern web technologies, it allows users to securely store, manage, and access files online. Key features include: User authentication for secure file management Upload, download, and delete files with ease Organize files in folders for better management Real-time file synchronization across devices Responsive design for a seamless experience on both desktop and mobile This project demonstrates my full-stack development capabilities, focusing on file management, cloud storage solutions, and user authentication.",
     imgUrl: project6,
-    url: "https://dropbox-app-clone.netlify.app/",
+    url: "https://dropbox-clone-mocha-nu.vercel.app",
     Technologies: [
       {
         name: "Next Js",

@@ -55,10 +55,9 @@ export default function Skills() {
             Software I love to work with
           </p>
           <p className=" text-slate-300">
-            With over 20 years of experience creating digital assets, I have a
-            deep and intuitive understanding of how the interfaces of the best
-            software products in the world are designed. This is just some of
-            the software I have used over that time.
+            I have a deep and intuitive understanding of how the interfaces of
+            the best software products in the world are designed. This is just
+            some of the software I have used over that time.
           </p>
           <div className="flex items-center justify-start flex-wrap py-10">
             {SoftwareJSON?.map((Skill, index) => {
