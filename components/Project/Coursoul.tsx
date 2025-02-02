@@ -1,8 +1,9 @@
 import { ArrowLeft, ArrowRight } from "lucide-react";
+import { StaticImageData } from "next/dist/shared/lib/get-img-props";
 import Image from "next/image";
 import React, { useRef } from "react";
 
-export default function Coursoul({ Data }: { Data: any }) {
+export default function Coursoul({ Data }: { Data: StaticImageData[] }) {
   const containerRef = useRef<HTMLDivElement>(null);
   const slideRef = useRef<HTMLDivElement>(null);
   if (!Data) return null;
@@ -13,7 +14,9 @@ export default function Coursoul({ Data }: { Data: any }) {
         ref={containerRef}
         className="flex-shrink-0 flex md:w-full max-md:w-full max-sm:mx-2 overflow-y-hidden overflow-x-scroll"
       >
-        {Data.map((e: any, i: number) => {
+        {Data.map((e: StaticImageData, i: number) => {
+          console.log(typeof e);
+
           return (
             <div
               key={i}

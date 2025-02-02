@@ -1,6 +1,6 @@
 "use client";
 import { Button } from "@/components/ui/button";
-import { ArrowUpRightFromCircleIcon, GithubIcon } from "lucide-react";
+import { GithubIcon } from "lucide-react";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import React from "react";
