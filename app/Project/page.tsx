@@ -18,7 +18,7 @@ type AppDetailsType = {
   images: StaticImageData[];
 };
 
-export default function Page() {
+function ProjectPageContent() {
   const searchParams = useSearchParams();
   const slug = searchParams.get("slug");
 
@@ -292,6 +292,71 @@ export default function Page() {
     );
   }
   return (
+    <div className="p-5 ">
+      <section className="bg-slate-900 p-4 rounded-xl">
+        <h1 className="text-2xl font-bold my-2">{AppDetails?.title}</h1>
+
+        <div className="flex items-center justify-between flex-wrap-reverse">
+          <p className="sm:w-2/3">{AppDetails?.description}</p>
+          {AppDetails?.icon && (
+            <Image
+              src={AppDetails?.icon}
+              className="w-[150px] h-[150px] rounded-xl flex-grow-0 sm:m-3 max-sm:my-4"
+              alt={"SplitzyIcon"}
+            />
+          )}
+        </div>
+        {AppDetails?.link && (
+          <Link href={AppDetails?.link} target="_blank">
+            <Button className="my-2 bg-gray-700 hover:bg-gray-600 text-white">
+              <div className="flex gap-3 items-center justify-center">
+                <Download size={20} /> Download apk
+              </div>
+            </Button>
+          </Link>
+        )}
+      </section>
+
+      <section className="mt-5 p-4 rounded-xl">
+        <h2 className="text-2xl font-semibold my-2">Tech Stack</h2>
+        <div className="flex flex-wrap">
+          {AppDetails?.Technologies?.map((Skill, index) => {
+            return (
+              <span
+                key={index}
+                className="m-2 gap-2 flex justify-center items-center bg-slate-900 rounded-md w-fit px-2 py-1"
+              >
+                {Skill.link && (
+                  <Image
+                    src={Skill.link}
+                    width={15}
+                    height={15}
+                    className="aspect-square"
+                    alt={Skill.name}
+                  />
+                )}
+                <p className="text-[12px] text-slate-400">{Skill.name}</p>
+              </span>
+            );
+          })}
+        </div>
+      </section>
+
+      <section className="mt-5 bg-slate-900 p-4 rounded-xl">
+        <h2 className="text-2xl font-semibold my-2">Features</h2>
+        {AppDetails?.features}
+      </section>
+
+      <section className="mt-10">
+        <h2 className="text-2xl font-semibold">App Screenshots</h2>
+        <Coursoul Data={AppDetails?.images} />
+      </section>
+    </div>
+  );
+}
+
+export default function Page() {
+  return (
     <Suspense
       fallback={
         <div className="flex items-center justify-center w-full h-dvh">
@@ -299,66 +364,7 @@ export default function Page() {
         </div>
       }
     >
-      <div className="p-5 ">
-        <section className="bg-slate-900 p-4 rounded-xl">
-          <h1 className="text-2xl font-bold my-2">{AppDetails?.title}</h1>
-
-          <div className="flex items-center justify-between flex-wrap-reverse">
-            <p className="sm:w-2/3">{AppDetails?.description}</p>
-            {AppDetails?.icon && (
-              <Image
-                src={AppDetails?.icon}
-                className="w-[150px] h-[150px] rounded-xl flex-grow-0 sm:m-3 max-sm:my-4"
-                alt={"SplitzyIcon"}
-              />
-            )}
-          </div>
-          {AppDetails?.link && (
-            <Link href={AppDetails?.link} target="_blank">
-              <Button className="my-2 bg-gray-700 hover:bg-gray-600 text-white">
-                <div className="flex gap-3 items-center justify-center">
-                  <Download size={20} /> Download apk
-                </div>
-              </Button>
-            </Link>
-          )}
-        </section>
-
-        <section className="mt-5 p-4 rounded-xl">
-          <h2 className="text-2xl font-semibold my-2">Tech Stack</h2>
-          <div className="flex flex-wrap">
-            {AppDetails?.Technologies?.map((Skill, index) => {
-              return (
-                <span
-                  key={index}
-                  className="m-2 gap-2 flex justify-center items-center bg-slate-900 rounded-md w-fit px-2 py-1"
-                >
-                  {Skill.link && (
-                    <Image
-                      src={Skill.link}
-                      width={15}
-                      height={15}
-                      className="aspect-square"
-                      alt={Skill.name}
-                    />
-                  )}
-                  <p className="text-[12px] text-slate-400">{Skill.name}</p>
-                </span>
-              );
-            })}
-          </div>
-        </section>
-
-        <section className="mt-5 bg-slate-900 p-4 rounded-xl">
-          <h2 className="text-2xl font-semibold my-2">Features</h2>
-          {AppDetails?.features}
-        </section>
-
-        <section className="mt-10">
-          <h2 className="text-2xl font-semibold">App Screenshots</h2>
-          <Coursoul Data={AppDetails?.images} />
-        </section>
-      </div>
+      <ProjectPageContent />
     </Suspense>
   );
 }
