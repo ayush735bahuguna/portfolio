@@ -218,6 +218,40 @@ export const ProjectData: {
     GithubLink: "https://github.com/ayush735bahuguna/dropbox-clone",
   },
   {
+    Name: "Next js Notes app",
+    Description:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam quia voluptate eaque quo sequi quod autem quibusdam provident, reiciendis cumque nobis nihil earum deleniti incidunt laborum, soluta cum, accusamus amet dolor? Blanditiis nobis ullam aut dolores voluptate vel quae repellat doloremque perspiciatis rem corrupti, unde voluptatem quas quos sapiente voluptas tenetur ad hic excepturi aperiam eos dignissimos consequuntur, vero itaque. Deleniti sint ullam iure reiciendis, iste voluptatem. Praesentium, distinctio maxime, porro nesciunt neque ipsum sapiente dicta quam aliquam dolorem maiores dolores. In, ducimus aperiam",
+    imgUrl: project3,
+    url: "https://notes-next-js-pink.vercel.app/",
+    Technologies: [
+      {
+        name: "React Js",
+        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+      },
+      {
+        name: "Node Js",
+        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg",
+      },
+      {
+        name: "express Js",
+        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg",
+      },
+      {
+        name: "Bootstrap",
+        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg",
+      },
+      {
+        name: "Mongo DB",
+        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
+      },
+      {
+        name: "JavaScript",
+        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+      },
+    ],
+    GithubLink: "https://github.com/ayush735bahuguna/Notes-nextJs",
+  },
+  {
     Name: "Magic Pictures",
     Description:
       "Magic Pictures is a visually captivating web app that allows users to explore and download high-quality images through the Unsplash API. The site offers an intuitive search and browsing experience with features such as: Search for images by keyword with real-time results Sort images by popularity, date (new), and other criteria Filter images by orientation (landscape, portrait, square, etc.) Click on individual images to open a detailed view in a modal and download high-resolution versions This project showcases my skills in front-end development, API integration, and delivering user-focused web experiences.",
@@ -380,7 +414,7 @@ export const ProjectData: {
     GithubLink: "https://github.com/ayush735bahuguna/Google-Form--Custom",
   },
   {
-    Name: "React js Notes App V1",
+    Name: "React js Notes App",
     Description:
       "Developed a feature-rich single-page note-taking application using the MERN stack (MongoDB, Express.js, React.js, Node.js). The app enables users to effortlessly manage their notes and profiles with key features including:User profile creation and management Ability to create, edit, and delete notes Search functionality to find notes by title Secure storage of notes in a MongoDB database This project highlights my expertise in full-stack development, focusing on user-friendly design, security, and scalability.",
     imgUrl: project1,
@@ -412,40 +446,6 @@ export const ProjectData: {
       },
     ],
     GithubLink: "https://github.com/ayush735bahuguna/MERN-Notes",
-  },
-  {
-    Name: "Next js Notes app V2",
-    Description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam quia voluptate eaque quo sequi quod autem quibusdam provident, reiciendis cumque nobis nihil earum deleniti incidunt laborum, soluta cum, accusamus amet dolor? Blanditiis nobis ullam aut dolores voluptate vel quae repellat doloremque perspiciatis rem corrupti, unde voluptatem quas quos sapiente voluptas tenetur ad hic excepturi aperiam eos dignissimos consequuntur, vero itaque. Deleniti sint ullam iure reiciendis, iste voluptatem. Praesentium, distinctio maxime, porro nesciunt neque ipsum sapiente dicta quam aliquam dolorem maiores dolores. In, ducimus aperiam",
-    imgUrl: project3,
-    url: "https://notes-next-js-pink.vercel.app/",
-    Technologies: [
-      {
-        name: "React Js",
-        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
-      },
-      {
-        name: "Node Js",
-        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg",
-      },
-      {
-        name: "express Js",
-        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg",
-      },
-      {
-        name: "Bootstrap",
-        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg",
-      },
-      {
-        name: "Mongo DB",
-        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
-      },
-      {
-        name: "JavaScript",
-        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
-      },
-    ],
-    GithubLink: "https://github.com/ayush735bahuguna/Notes-nextJs",
   },
   {
     Name: "Chat App UI",

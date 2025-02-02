@@ -33,7 +33,11 @@ export default function Skills() {
           <div className="flex items-center justify-start flex-wrap py-10">
             {SkillJSON?.map((Skill, index) => {
               return (
-                <Button key={index} variant={"secondary"} className="m-2 gap-2">
+                <Button
+                  key={index}
+                  variant={"secondary"}
+                  className="m-2 gap-2 bg-gray-800 hover:bg-gray-700"
+                >
                   {Skill.link && (
                     <Image
                       src={Skill.link}
@@ -43,7 +47,7 @@ export default function Skills() {
                       alt={Skill.name}
                     />
                   )}
-                  <p>{Skill.name}</p>
+                  <p className="text-white">{Skill.name}</p>
                 </Button>
               );
             })}
@@ -62,7 +66,11 @@ export default function Skills() {
           <div className="flex items-center justify-start flex-wrap py-10">
             {SoftwareJSON?.map((Skill, index) => {
               return (
-                <Button key={index} variant={"secondary"} className="m-2 gap-2">
+                <Button
+                  key={index}
+                  variant={"secondary"}
+                  className="m-2 gap-2 bg-gray-800 hover:bg-gray-700"
+                >
                   {Skill.link && (
                     <Image
                       src={Skill.link}
@@ -72,7 +80,7 @@ export default function Skills() {
                       alt={Skill.name}
                     />
                   )}
-                  <p>{Skill.name}</p>
+                  <p className="text-white">{Skill.name}</p>
                 </Button>
               );
             })}

@@ -33,9 +33,13 @@ export default function Contact() {
               placeholder="Message"
               required={true}
             />
-            <Button type={"submit"} variant={"secondary"} className="w-full">
+            <Button
+              type={"submit"}
+              variant={"secondary"}
+              className="w-full bg-gray-800 hover:bg-gray-700 text-white"
+            >
               Send &nbsp;
-              <SendHorizonal size={17} />
+              <SendHorizonal size={17} color="white" />
             </Button>
           </form>
         </div>

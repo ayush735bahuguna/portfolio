@@ -53,12 +53,18 @@ export default function ProjectCard({
 
         <div className="flex gap-3 py-5 ms-2">
           <Link href={data.url} target="_blank">
-            <Button variant={"secondary"}>
+            <Button
+              variant={"secondary"}
+              className="bg-gray-700 hover:bg-gray-600 text-white"
+            >
               <ArrowUpRightFromCircleIcon size={17} /> &nbsp; Visit
             </Button>
           </Link>
           <Link href={data.GithubLink} target="_blank">
-            <Button variant={"secondary"}>
+            <Button
+              variant={"secondary"}
+              className="bg-gray-700 hover:bg-gray-600 text-white"
+            >
               <GithubIcon size={17} /> &nbsp; Code
             </Button>
           </Link>
