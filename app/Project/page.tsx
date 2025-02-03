@@ -286,13 +286,13 @@ function ProjectPageContent() {
 
   if (!slug || !AppDetails) {
     return (
-      <div className="flex items-center justify-center w-full h-dvh">
+      <div className="flex items-center justify-center w-full h-dvh bg-black text-white">
         <p>Oops! project not found</p>
       </div>
     );
   }
   return (
-    <div className="p-5 ">
+    <div className="p-5 bg-black text-white">
       <section className="bg-slate-900 p-4 rounded-xl">
         <h1 className="text-2xl font-bold my-2">{AppDetails?.title}</h1>
 
