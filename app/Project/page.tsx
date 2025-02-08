@@ -301,6 +301,7 @@ function ProjectPageContent() {
           {AppDetails?.icon && (
             <Image
               src={AppDetails?.icon}
+              blurDataURL={AppDetails?.icon?.blurDataURL}
               className="w-[150px] h-[150px] rounded-xl flex-grow-0 sm:m-3 max-sm:my-4"
               alt={"SplitzyIcon"}
             />

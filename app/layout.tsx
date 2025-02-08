@@ -16,7 +16,8 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "Ayush Bahuguna",
-  description: "Created by Ayush bahuguna with love",
+  description:
+    "Hi there! I'm Ayush (he/him), a full-stack developer based out of India. I'm self-taught, always keen to make dynamic & functional websites! Drop a hello & let's build a fantastic website together! ",
 };
 
 export default function RootLayout({

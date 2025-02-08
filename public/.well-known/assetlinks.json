@@ -1,0 +1,13 @@
+[
+    {
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "com.ayushbahuguna1122.Splitzy",
+        "sha256_cert_fingerprints": [
+          "  DF:62:26:92:BE:97:99:76:E1:9A:0A:32:AC:35:7B:AA:BF:2B:DF:86:00:F5:D5:4F:CF:53:84:86:92:B8:86:93"
+        ]
+      }
+    }
+  ]
+  

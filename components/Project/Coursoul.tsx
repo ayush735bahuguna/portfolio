@@ -15,8 +15,6 @@ export default function Coursoul({ Data }: { Data: StaticImageData[] }) {
         className="flex-shrink-0 flex md:w-full max-md:w-full max-sm:mx-2 overflow-y-hidden overflow-x-scroll"
       >
         {Data.map((e: StaticImageData, i: number) => {
-          console.log(typeof e);
-
           return (
             <div
               key={i}
@@ -25,6 +23,7 @@ export default function Coursoul({ Data }: { Data: StaticImageData[] }) {
             >
               <Image
                 src={e}
+                blurDataURL={e?.blurDataURL}
                 alt=""
                 className="object-cover w-full h-full rounded-xl"
               />
