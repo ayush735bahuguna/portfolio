@@ -27,7 +27,6 @@ export default function Coursoul({ Data }: { Data: StaticImageData[] }) {
                 alt=""
                 className="object-cover w-full h-full rounded-xl"
               />
-              <p>{i}</p>
             </div>
           );
         })}
