@@ -27,67 +27,126 @@ function ProjectPageContent() {
       ? {
           title: "Splitzy : Simplify Expenses",
           icon: require("@/app/assets/projects/Splitzy/SplitzyIcon.png"),
+
           description:
-            "Splitzy is a feature-rich mobile app designed to make group expense management hassle-free. From splitting bills to tracking payments and settling debts, it offers a user-friendly solution to keep finances organized within groups, Easy Bill Splitting: Share expenses equally or customize shares, Payment Tracking: Record payments and monitor balances in real time, Expense Summaries: Detailed reports for better financial clarity, Secure and Private: User data is securely managed to ensure privacy",
+            "Splitzy is a smart expense management app designed to simplify the way individuals and groups handle shared and personal finances. Whether you’re splitting bills with friends, managing group trips, or simply tracking your daily expenses, Splitzy ensures everything stays organized and transparent. It offers multiple ways to split costs, automatically adjusts balances when payments are made, and keeps detailed records for accountability. Users can track personal spending trends with charts, generate professional reports, and even manage expenses offline with seamless data sync. With secure login options, app lock protection, and a modern intuitive interface with dark mode, Splitzy is built for both convenience and trust. From roommates to colleagues, travel groups to personal budgets—Splitzy makes expense sharing easy, clear, and hassle-free.",
           link: "https://drive.google.com/drive/folders/12BgX4XCC47JJA-4WNGVFculIYF-ssWwx?usp=drive_link",
           features: (
             <ul className="list-disc pl-5">
               <li>
-                Track both <b>group and individual expenses</b> efficiently.
-              </li>
-              <li>
-                <b>Flexible expense splitting</b>: Supports{" "}
-                <b>
-                  equal, percentage-based, share-based, and custom (unequal)
-                  contributions
-                </b>
-                with single or multiple payers.
-              </li>
-              <li>
-                <b>Seamless payment settlements</b>: Log payments made between
-                users and <b>auto-adjust balances</b> accordingly.
-              </li>
-              <li>
-                <b>Push notifications & reminders</b>:
+                <b>Expense Management</b>
                 <ul className="list-disc pl-5">
                   <li>
-                    Get notified for
-                    <b> new expenses, payments, and settlements</b>.
+                    Track <b>group, personal, and one-on-one expenses</b> with
+                    dedicated tabs.
                   </li>
                   <li>
-                    Option to <b>toggle push notifications on/off</b> in
-                    settings.
+                    Record and manage spendings across{" "}
+                    <b>friends, roommates, office, and trips</b>.
                   </li>
                 </ul>
               </li>
+
               <li>
-                <b>Activity Logs & Comments</b>: Maintain a
-                <b>detailed history of group activities</b>, including expense
-                additions and deletions, with a comment section for better
-                tracking.
-              </li>
-              <li>
-                <b>Detailed analytics & reports</b>: Generate{" "}
-                <b>expense summaries and reports as PDFs</b> for easy tracking
-                and sharing.
-              </li>
-              <li>
-                <b>User management made easy</b>: Add users quickly via{" "}
-                <b>QR code scanning</b>.
-              </li>
-              <li>
-                <b>Enhanced security</b>:
+                <b>Flexible Splitting & Settlements</b>
                 <ul className="list-disc pl-5">
                   <li>
-                    <b>App lock</b> for additional authentication security.
+                    Split expenses{" "}
+                    <b>
+                      equally, by percentage, by shares, or custom contributions
+                    </b>
+                    .
                   </li>
                   <li>
-                    Secure <b>Google authentication & email sign-in</b>.
+                    Supports <b>single or multiple payers</b> in a transaction.
+                  </li>
+                  <li>
+                    Log payments between users and <b>auto-adjust balances</b>{" "}
+                    instantly.
                   </li>
                 </ul>
               </li>
+
               <li>
-                <b>Dark mode support</b> for a visually comfortable experience.
+                <b>Offline-First Support</b>
+                <ul className="list-disc pl-5">
+                  <li>
+                    <b>Add and manage expenses</b> without internet
+                    connectivity.
+                  </li>
+                  <li>
+                    <b>Automatic synchronization</b> when online to keep data
+                    updated.
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+                <b>Insights & Reports</b>
+                <ul className="list-disc pl-5">
+                  <li>
+                    View detailed <b>daily, monthly, and yearly statistics</b>.
+                  </li>
+                  <li>
+                    Interactive charts for better visualization of spending.
+                  </li>
+                  <li>
+                    Export professional <b>PDF reports</b> for sharing and
+                    record-keeping.
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+                <b>Notifications & Activity Tracking</b>
+                <ul className="list-disc pl-5">
+                  <li>
+                    Receive alerts for{" "}
+                    <b>new expenses, settlements, and payments</b>.
+                  </li>
+                  <li>
+                    Option to <b>enable/disable notifications</b> as needed.
+                  </li>
+                  <li>
+                    Maintain a detailed <b>activity history</b> with logs and
+                    contextual comments.
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+                <b>User Management</b>
+                <ul className="list-disc pl-5">
+                  <li>
+                    Add new users quickly via <b>QR code scanning</b>.
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+                <b>Security & Privacy</b>
+                <ul className="list-disc pl-5">
+                  <li>
+                    Protect data with <b>app lock</b> for additional
+                    authentication.
+                  </li>
+                  <li>
+                    Enable <b>Google authentication and email sign-in</b> for
+                    secure login.
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+                <b>Modern Interface</b>
+                <ul className="list-disc pl-5">
+                  <li>
+                    Upgraded, <b>intuitive UI</b> for a better user experience.
+                  </li>
+                  <li>
+                    <b>Dark mode support</b> for comfortable usage anytime.
+                  </li>
+                </ul>
               </li>
             </ul>
           ),
@@ -120,17 +179,22 @@ function ProjectPageContent() {
 
           images: [
             require("@/app/assets/projects/Splitzy/Splitzy (25).jpg"),
-            require("@/app/assets/projects/Splitzy/Splitzy (19).jpg"),
-            require("@/app/assets/projects/Splitzy/Splitzy (1).jpg"),
-            require("@/app/assets/projects/Splitzy/Splitzy (15).jpg"),
-            require("@/app/assets/projects/Splitzy/Splitzy (2).jpg"),
             require("@/app/assets/projects/Splitzy/Splitzy (18).jpg"),
-            require("@/app/assets/projects/Splitzy/Splitzy (11).jpg"),
-            require("@/app/assets/projects/Splitzy/Splitzy (20).jpg"),
+            require("@/app/assets/projects/Splitzy/Splitzy (3).jpg"),
+            require("@/app/assets/projects/Splitzy/Splitzy (5).jpg"),
+            require("@/app/assets/projects/Splitzy/Splitzy (2).jpg"),
+            require("@/app/assets/projects/Splitzy/Splitzy (6).jpg"),
+            require("@/app/assets/projects/Splitzy/Splitzy (9).jpg"),
+            require("@/app/assets/projects/Splitzy/Splitzy (17).jpg"),
             require("@/app/assets/projects/Splitzy/Splitzy (12).jpg"),
-            require("@/app/assets/projects/Splitzy/Splitzy (29).jpg"),
-            require("@/app/assets/projects/Splitzy/Splitzy (30).jpg"),
-            require("@/app/assets/projects/Splitzy/Splitzy (4).jpg"),
+            require("@/app/assets/projects/Splitzy/Splitzy (8).jpg"),
+            require("@/app/assets/projects/Splitzy/Splitzy (11).jpg"),
+            require("@/app/assets/projects/Splitzy/Splitzy (16).jpg"),
+            require("@/app/assets/projects/Splitzy/Splitzy (15).jpg"),
+            require("@/app/assets/projects/Splitzy/Splitzy (10).jpg"),
+            require("@/app/assets/projects/Splitzy/Splitzy (13).jpg"),
+            require("@/app/assets/projects/Splitzy/Splitzy (14).jpg"),
+            require("@/app/assets/projects/Splitzy/Splitzy (7).jpg"),
           ],
         }
       : slug === "overshare"
