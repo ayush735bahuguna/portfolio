@@ -170,53 +170,88 @@ export const ProjectData: {
     GithubLink: "https://github.com/ayush735bahuguna/MERN-chat-app",
   },
   {
-    Name: "Movie-adda",
+    Name: "Custom Authentication MERN",
     Description:
-      "Movie-Adda is a dynamic web application built with React that allows users to explore and discover movies and TV series. Powered by TMDB (The Movie Database) API, the app provides a seamless experience for film enthusiasts with features such as: Search movies and TV series by title, genre, or keyword Browse trending movies and TV series based on real-time TMDB data View detailed information including title, overview, poster, cast, crew, and ratings Receive personalized movie recommendations based on preferences This project showcases my front-end development skills and my ability to integrate third-party APIs for dynamic content.",
-    imgUrl: project5,
-    url: "https://movie-adda.netlify.app/",
+      "This project involves building a secure, custom authentication system using the MERN stack (MongoDB, Express.js, React.js, Node.js). The system allows users to: Register and log in using secure password encryption (bcrypt) Authenticate users via JWT (JSON Web Tokens) for secure session management Protect routes and ensure only authenticated users can access certain features Implement role-based access control for different user permissions Secure user data with validation and input sanitization This project showcases my expertise in building secure, full-stack authentication systems with the MERN stack, focusing on security best practices and scalability.",
+    imgUrl: project10,
+    url: "https://login-intern.vercel.app/auth",
     Technologies: [
       {
         name: "React Js",
         link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
       },
       {
-        name: "Bootstrap",
-        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg",
+        name: "Node Js",
+        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg",
+      },
+      {
+        name: "express Js",
+        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg",
+      },
+      {
+        name: "Tailwind",
+        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+      },
+      {
+        name: "Mongo DB",
+        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
       },
       {
         name: "JavaScript",
         link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
       },
     ],
-    GithubLink: "https://github.com/ayush735bahuguna/movie-adda",
+    GithubLink: "https://github.com/ayush735bahuguna/login-next-js",
   },
   {
-    Name: "SafeDrive",
+    Name: "Event website",
     Description:
-      "The SafeDrive is a cloud storage web application designed to mimic the core functionalities of Dropbox. Built using modern web technologies, it allows users to securely store, manage, and access files online. Key features include: User authentication for secure file management Upload, download, and delete files with ease Organize files in folders for better management Real-time file synchronization across devices Responsive design for a seamless experience on both desktop and mobile This project demonstrates my full-stack development capabilities, focusing on file management, cloud storage solutions, and user authentication.",
-    imgUrl: project6,
-    url: "https://dropbox-clone-mocha-nu.vercel.app",
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam quia voluptate eaque quo sequi quod autem quibusdam provident, reiciendis cumque nobis nihil earum deleniti incidunt laborum, soluta cum, accusamus amet dolor? Blanditiis nobis ullam aut dolores voluptate vel quae repellat doloremque perspiciatis rem corrupti, unde voluptatem quas quos sapiente voluptas tenetur ad hic excepturi aperiam eos dignissimos consequuntur, vero itaque. Deleniti sint ullam iure reiciendis, iste voluptatem. Praesentium, distinctio maxime, porro nesciunt neque ipsum sapiente dicta quam aliquam dolorem maiores dolores. In, ducimus aperiam",
+    imgUrl: project7,
+    url: "https://colosseum24.vercel.app/",
     Technologies: [
       {
         name: "Next Js",
         link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
       },
       {
-        name: "firebase",
-        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg",
-      },
-      {
-        name: "JavaScript",
-        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
-      },
-      {
         name: "Tailwind",
         link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
       },
+      {
+        name: "Typescript",
+        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-plain.svg",
+      },
     ],
-    GithubLink: "https://github.com/ayush735bahuguna/dropbox-clone",
+    GithubLink: "https://github.com/ayush735bahuguna/colosseum",
   },
+
+  // {
+  //   Name: "SafeDrive",
+  //   Description:
+  //     "The SafeDrive is a cloud storage web application designed to mimic the core functionalities of Dropbox. Built using modern web technologies, it allows users to securely store, manage, and access files online. Key features include: User authentication for secure file management Upload, download, and delete files with ease Organize files in folders for better management Real-time file synchronization across devices Responsive design for a seamless experience on both desktop and mobile This project demonstrates my full-stack development capabilities, focusing on file management, cloud storage solutions, and user authentication.",
+  //   imgUrl: project6,
+  //   url: "https://dropbox-clone-mocha-nu.vercel.app",
+  //   Technologies: [
+  //     {
+  //       name: "Next Js",
+  //       link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
+  //     },
+  //     {
+  //       name: "firebase",
+  //       link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg",
+  //     },
+  //     {
+  //       name: "JavaScript",
+  //       link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+  //     },
+  //     {
+  //       name: "Tailwind",
+  //       link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+  //     },
+  //   ],
+  //   GithubLink: "https://github.com/ayush735bahuguna/dropbox-clone",
+  // },
   {
     Name: "Next js Notes app",
     Description:
@@ -274,60 +309,26 @@ export const ProjectData: {
     GithubLink: "https://github.com/ayush735bahuguna/picture",
   },
   {
-    Name: "Custom Authentication MERN",
+    Name: "Movie-adda",
     Description:
-      "This project involves building a secure, custom authentication system using the MERN stack (MongoDB, Express.js, React.js, Node.js). The system allows users to: Register and log in using secure password encryption (bcrypt) Authenticate users via JWT (JSON Web Tokens) for secure session management Protect routes and ensure only authenticated users can access certain features Implement role-based access control for different user permissions Secure user data with validation and input sanitization This project showcases my expertise in building secure, full-stack authentication systems with the MERN stack, focusing on security best practices and scalability.",
-    imgUrl: project10,
-    url: "https://login-intern.vercel.app/auth",
+      "Movie-Adda is a dynamic web application built with React that allows users to explore and discover movies and TV series. Powered by TMDB (The Movie Database) API, the app provides a seamless experience for film enthusiasts with features such as: Search movies and TV series by title, genre, or keyword Browse trending movies and TV series based on real-time TMDB data View detailed information including title, overview, poster, cast, crew, and ratings Receive personalized movie recommendations based on preferences This project showcases my front-end development skills and my ability to integrate third-party APIs for dynamic content.",
+    imgUrl: project5,
+    url: "https://movie-adda.netlify.app/",
     Technologies: [
       {
         name: "React Js",
         link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
       },
       {
-        name: "Node Js",
-        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg",
-      },
-      {
-        name: "express Js",
-        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg",
-      },
-      {
-        name: "Tailwind",
-        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
-      },
-      {
-        name: "Mongo DB",
-        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
+        name: "Bootstrap",
+        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg",
       },
       {
         name: "JavaScript",
         link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
       },
     ],
-    GithubLink: "https://github.com/ayush735bahuguna/login-next-js",
-  },
-  {
-    Name: "Event website",
-    Description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam quia voluptate eaque quo sequi quod autem quibusdam provident, reiciendis cumque nobis nihil earum deleniti incidunt laborum, soluta cum, accusamus amet dolor? Blanditiis nobis ullam aut dolores voluptate vel quae repellat doloremque perspiciatis rem corrupti, unde voluptatem quas quos sapiente voluptas tenetur ad hic excepturi aperiam eos dignissimos consequuntur, vero itaque. Deleniti sint ullam iure reiciendis, iste voluptatem. Praesentium, distinctio maxime, porro nesciunt neque ipsum sapiente dicta quam aliquam dolorem maiores dolores. In, ducimus aperiam",
-    imgUrl: project7,
-    url: "https://colosseum24.vercel.app/",
-    Technologies: [
-      {
-        name: "Next Js",
-        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
-      },
-      {
-        name: "Tailwind",
-        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
-      },
-      {
-        name: "Typescript",
-        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-plain.svg",
-      },
-    ],
-    GithubLink: "https://github.com/ayush735bahuguna/colosseum",
+    GithubLink: "https://github.com/ayush735bahuguna/movie-adda",
   },
   {
     Name: "Food Recipe App",
@@ -364,32 +365,6 @@ export const ProjectData: {
       },
     ],
     GithubLink: "https://github.com/ayush735bahuguna/wallywalls",
-  },
-  {
-    Name: "Image gallery socket-io",
-    Description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam quia voluptate eaque quo sequi quod autem quibusdam provident, reiciendis cumque nobis nihil earum deleniti incidunt laborum, soluta cum, accusamus amet dolor? Blanditiis nobis ullam aut dolores voluptate vel quae repellat doloremque perspiciatis rem corrupti, unde voluptatem quas quos sapiente voluptas tenetur ad hic excepturi aperiam eos dignissimos consequuntur, vero itaque. Deleniti sint ullam iure reiciendis, iste voluptatem. Praesentium, distinctio maxime, porro nesciunt neque ipsum sapiente dicta quam aliquam dolorem maiores dolores. In, ducimus aperiam",
-    imgUrl: project8,
-    url: "https://gallery-socket-io.vercel.app/",
-    Technologies: [
-      {
-        name: "Next Js",
-        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
-      },
-      {
-        name: "React Native",
-        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
-      },
-      {
-        name: "Material ui",
-        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/materialui/materialui-original.svg",
-      },
-      {
-        name: "Socket.io",
-        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/socketio/socketio-original.svg",
-      },
-    ],
-    GithubLink: "https://github.com/ayush735bahuguna/gallery-socket.io",
   },
   {
     Name: "Custom Google form",
@@ -447,48 +422,48 @@ export const ProjectData: {
     ],
     GithubLink: "https://github.com/ayush735bahuguna/MERN-Notes",
   },
-  {
-    Name: "Chat App UI",
-    Description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam quia voluptate eaque quo sequi quod autem quibusdam provident, reiciendis cumque nobis nihil earum deleniti incidunt laborum, soluta cum, accusamus amet dolor? Blanditiis nobis ullam aut dolores voluptate vel quae repellat doloremque perspiciatis rem corrupti, unde voluptatem quas quos sapiente voluptas tenetur ad hic excepturi aperiam eos dignissimos consequuntur, vero itaque. Deleniti sint ullam iure reiciendis, iste voluptatem. Praesentium, distinctio maxime, porro nesciunt neque ipsum sapiente dicta quam aliquam dolorem maiores dolores. In, ducimus aperiam",
-    imgUrl: project13,
-    url: "https://messenger-mern-next.vercel.app/",
-    Technologies: [
-      {
-        name: "Next Js",
-        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
-      },
-      {
-        name: "Tailwind",
-        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
-      },
-      {
-        name: "Typescript",
-        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-plain.svg",
-      },
-    ],
-    GithubLink: "https://github.com/ayush735bahuguna/messenger-nextjs",
-  },
-  {
-    Name: "Chat Bot UI",
-    Description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam quia voluptate eaque quo sequi quod autem quibusdam provident, reiciendis cumque nobis nihil earum deleniti incidunt laborum, soluta cum, accusamus amet dolor? Blanditiis nobis ullam aut dolores voluptate vel quae repellat doloremque perspiciatis rem corrupti, unde voluptatem quas quos sapiente voluptas tenetur ad hic excepturi aperiam eos dignissimos consequuntur, vero itaque. Deleniti sint ullam iure reiciendis, iste voluptatem. Praesentium, distinctio maxime, porro nesciunt neque ipsum sapiente dicta quam aliquam dolorem maiores dolores. In, ducimus aperiam",
-    imgUrl: project13,
-    url: "https://chat-bot-ui-two.vercel.app/",
-    Technologies: [
-      {
-        name: "Next Js",
-        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
-      },
-      {
-        name: "Tailwind",
-        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
-      },
-      {
-        name: "Typescript",
-        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-plain.svg",
-      },
-    ],
-    GithubLink: "https://github.com/ayush735bahuguna/chat-bot---ui",
-  },
+  // {
+  //   Name: "Chat App UI",
+  //   Description:
+  //     "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam quia voluptate eaque quo sequi quod autem quibusdam provident, reiciendis cumque nobis nihil earum deleniti incidunt laborum, soluta cum, accusamus amet dolor? Blanditiis nobis ullam aut dolores voluptate vel quae repellat doloremque perspiciatis rem corrupti, unde voluptatem quas quos sapiente voluptas tenetur ad hic excepturi aperiam eos dignissimos consequuntur, vero itaque. Deleniti sint ullam iure reiciendis, iste voluptatem. Praesentium, distinctio maxime, porro nesciunt neque ipsum sapiente dicta quam aliquam dolorem maiores dolores. In, ducimus aperiam",
+  //   imgUrl: project13,
+  //   url: "https://messenger-mern-next.vercel.app/",
+  //   Technologies: [
+  //     {
+  //       name: "Next Js",
+  //       link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
+  //     },
+  //     {
+  //       name: "Tailwind",
+  //       link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+  //     },
+  //     {
+  //       name: "Typescript",
+  //       link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-plain.svg",
+  //     },
+  //   ],
+  //   GithubLink: "https://github.com/ayush735bahuguna/messenger-nextjs",
+  // },
+  // {
+  //   Name: "Chat Bot UI",
+  //   Description:
+  //     "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam quia voluptate eaque quo sequi quod autem quibusdam provident, reiciendis cumque nobis nihil earum deleniti incidunt laborum, soluta cum, accusamus amet dolor? Blanditiis nobis ullam aut dolores voluptate vel quae repellat doloremque perspiciatis rem corrupti, unde voluptatem quas quos sapiente voluptas tenetur ad hic excepturi aperiam eos dignissimos consequuntur, vero itaque. Deleniti sint ullam iure reiciendis, iste voluptatem. Praesentium, distinctio maxime, porro nesciunt neque ipsum sapiente dicta quam aliquam dolorem maiores dolores. In, ducimus aperiam",
+  //   imgUrl: project13,
+  //   url: "https://chat-bot-ui-two.vercel.app/",
+  //   Technologies: [
+  //     {
+  //       name: "Next Js",
+  //       link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
+  //     },
+  //     {
+  //       name: "Tailwind",
+  //       link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+  //     },
+  //     {
+  //       name: "Typescript",
+  //       link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-plain.svg",
+  //     },
+  //   ],
+  //   GithubLink: "https://github.com/ayush735bahuguna/chat-bot---ui",
+  // },
 ];
