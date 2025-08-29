@@ -3,14 +3,14 @@ import project2 from "@/app/assets/projects/Magic-pictures.png";
 import project3 from "@/app/assets/projects/Nextjs notes.png";
 import project4 from "@/app/assets/projects/chat-link.png";
 import project5 from "@/app/assets/projects/movie-adda.png";
-import project6 from "@/app/assets/projects/dropbox-clone1.png";
+// import project6 from "@/app/assets/projects/dropbox-clone1.png";
 import project7 from "@/app/assets/projects/Event website.png";
-import project8 from "@/app/assets/projects/image gallary.png";
+// import project8 from "@/app/assets/projects/image gallary.png";
 import project9 from "@/app/assets/projects/Google form.png";
 import project10 from "@/app/assets/projects/auth.png";
 import project11 from "@/app/assets/projects/wallywals.png";
 import project12 from "@/app/assets/projects/food recipie.png";
-import project13 from "@/app/assets/projects/messanger ui.png";
+// import project13 from "@/app/assets/projects/messanger ui.png";
 import { StaticImageData } from "next/image";
 
 export const SkillJSON: { name: string; link: string }[] = [
