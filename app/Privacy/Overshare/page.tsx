@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 export default function PrivacyPolicy() {
   return (
     <main className="max-w-2xl mx-auto px-6 py-10 bg-black rounded-lg shadow text-white">
