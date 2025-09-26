@@ -35,7 +35,7 @@ export default function PrivacyPolicy() {
       </ul>
 
       <h2 className="text-xl font-semibold mb-2 mt-8">
-        Security & Children's Privacy
+        Security & Children&apos;s Privacy
       </h2>
       <ul className="list-disc ml-6 mb-6">
         <li>
