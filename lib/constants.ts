@@ -136,6 +136,67 @@ export const ProjectData: {
   Technologies: { name: string; link: string }[];
 }[] = [
   {
+    Name: "BLE Connect",
+    Description:
+      "A mobile app built with React Native and Expo for monitoring AC units via Bluetooth. BLE Connect displays real-time data like temperature, phase voltages (R, Y, B), and system health indicators. It features color-coded alerts, secure OTP-based authentication via Firebase, and easy Bluetooth pairing with QR codes. The app also allows users to customize the Bluetooth module name and provides comprehensive error handling for system diagnostics.",
+    Technologies: [
+      {
+        name: "React Native",
+        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+      },
+      {
+        name: "Typescript",
+        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-plain.svg",
+      },
+      {
+        name: "Tailwind",
+        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+      },
+      {
+        name: "firebase",
+        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg",
+      },
+    ],
+    url: "/Project?slug=ble-connect",
+    GithubLink: "",
+    imgUrl: require("@/app/assets/BLE.png"),
+  },
+  {
+    Name: "Social media app",
+    Description:
+      "Developed a full-stack social media web application utilizing the MongoDB, Express.js, Node.js ,Next js. This application allows users to: Create and manage profiles -    Create, edit, and delete posts - Like and comment on other users' posts - Follow , Unfollow other users - Search for  users and posts",
+    Technologies: [
+      {
+        name: "Next Js",
+        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
+      },
+      {
+        name: "Node Js",
+        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg",
+      },
+
+      {
+        name: "Tailwind",
+        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+      },
+      {
+        name: "Typescript",
+        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-plain.svg",
+      },
+      {
+        name: "Mongo DB",
+        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
+      },
+      {
+        name: "express Js",
+        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg",
+      },
+    ],
+    url: "https://social-link-app.vercel.app",
+    GithubLink: "",
+    imgUrl: require("@/app/assets/Social media.png"),
+  },
+  {
     Name: "MERN Chat App",
     Description:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam quia voluptate eaque quo sequi quod autem quibusdam provident, reiciendis cumque nobis nihil earum deleniti incidunt laborum, soluta cum, accusamus amet dolor? Blanditiis nobis ullam aut dolores voluptate vel quae repellat doloremque perspiciatis rem corrupti, unde voluptatem quas quos sapiente voluptas tenetur ad hic excepturi aperiam eos dignissimos consequuntur, vero itaque. Deleniti sint ullam iure reiciendis, iste voluptatem. Praesentium, distinctio maxime, porro nesciunt neque ipsum sapiente dicta quam aliquam dolorem maiores dolores. In, ducimus aperiam",

@@ -60,14 +60,16 @@ export default function ProjectCard({
               <ArrowUpRightFromCircleIcon size={17} /> &nbsp; Visit
             </Button>
           </Link>
-          <Link href={data.GithubLink} target="_blank">
-            <Button
-              variant={"secondary"}
-              className="bg-gray-700 hover:bg-gray-600 text-white"
-            >
-              <GithubIcon size={17} /> &nbsp; Code
-            </Button>
-          </Link>
+          {data.GithubLink && (
+            <Link href={data.GithubLink} target="_blank">
+              <Button
+                variant={"secondary"}
+                className="bg-gray-700 hover:bg-gray-600 text-white"
+              >
+                <GithubIcon size={17} /> &nbsp; Code
+              </Button>
+            </Link>
+          )}
         </div>
       </div>
       <div className="p-5 md:w-1/2 max-w-[500px]">

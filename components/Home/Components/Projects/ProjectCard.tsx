@@ -1,6 +1,4 @@
 "use client";
-import { Button } from "@/components/ui/button";
-import { GithubIcon } from "lucide-react";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -10,18 +8,14 @@ export default function ProjectCard({
   description,
   Technologies,
   link,
-  GithubLink,
   imageUrl,
-  visiblity,
   slug,
 }: {
   name: string;
   description: string;
   Technologies: { name: string; link: string }[];
   link: string;
-  GithubLink: string;
   imageUrl: string | StaticImageData;
-  visiblity: "public" | "private";
   slug?: string | null;
 }) {
   return (
@@ -50,28 +44,6 @@ export default function ProjectCard({
                 </span>
               );
             })}
-          </div>
-          <div className="flex gap-3 pt-2 ps-3">
-            <Image
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
-              height={20}
-              width={20}
-              alt=""
-              className="invert"
-            />
-            <p className="text-sm text-slate-300">
-              {visiblity === "public" ? "Public" : "Private"} repository
-            </p>
-          </div>
-          <div className="flex gap-3 py-5 ps-3">
-            {(visiblity || GithubLink) === "public" && (
-              <Button
-                variant={"secondary"}
-                className="bg-gray-700 hover:bg-gray-600 text-white"
-              >
-                <GithubIcon size={17} /> &nbsp; Code
-              </Button>
-            )}
           </div>
         </div>
         <Image

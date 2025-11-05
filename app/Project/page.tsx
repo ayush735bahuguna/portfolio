@@ -27,7 +27,6 @@ function ProjectPageContent() {
       ? {
           title: "Splitzy : Simplify Expenses",
           icon: require("@/app/assets/projects/Splitzy/SplitzyIcon.png"),
-
           description:
             "Splitzy is a smart expense management app designed to simplify the way individuals and groups handle shared and personal finances. Whether you’re splitting bills with friends, managing group trips, or simply tracking your daily expenses, Splitzy ensures everything stays organized and transparent. It offers multiple ways to split costs, automatically adjusts balances when payments are made, and keeps detailed records for accountability. Users can track personal spending trends with charts, generate professional reports, and even manage expenses offline with seamless data sync. With secure login options, app lock protection, and a modern intuitive interface with dark mode, Splitzy is built for both convenience and trust. From roommates to colleagues, travel groups to personal budgets—Splitzy makes expense sharing easy, clear, and hassle-free.",
           link: "https://drive.google.com/drive/folders/12BgX4XCC47JJA-4WNGVFculIYF-ssWwx?usp=drive_link",
@@ -176,7 +175,6 @@ function ProjectPageContent() {
               link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg",
             },
           ],
-
           images: [
             require("@/app/assets/projects/Splitzy/splitzy-16.jpg"),
             require("@/app/assets/projects/Splitzy/splitzy-15.jpg"),
@@ -218,7 +216,6 @@ function ProjectPageContent() {
                 <b>Wallpaper customization</b>: Choose from{" "}
                 <b>gallery images</b> or <b>prebuilt solid color themes</b>.
               </li>
-
               <li>
                 Smooth <b>animations</b> enhance the user experience.
               </li>
@@ -266,14 +263,11 @@ function ProjectPageContent() {
           ],
           images: [
             require("@/app/assets/projects/overshare/overshare (1).jpg"),
-            require("@/app/assets/projects/overshare/overshare (10).jpg"),
-            require("@/app/assets/projects/overshare/overshare (2).jpg"),
-            require("@/app/assets/projects/overshare/overshare (3).jpg"),
-            require("@/app/assets/projects/overshare/overshare (5).jpg"),
-            require("@/app/assets/projects/overshare/overshare (8).jpg"),
-            require("@/app/assets/projects/overshare/overshare (7).jpg"),
-            require("@/app/assets/projects/overshare/overshare (4).jpg"),
-            require("@/app/assets/projects/overshare/overshare (9).jpg"),
+            require("@/app/assets/projects/overshare/overshare (3).png"),
+            require("@/app/assets/projects/overshare/overshare (2).png"),
+            require("@/app/assets/projects/overshare/overshare (4).png"),
+            require("@/app/assets/projects/overshare/overshare (5).png"),
+            require("@/app/assets/projects/overshare/overshare (6).png"),
           ],
         }
       : slug === "ble-connect"
@@ -346,6 +340,158 @@ function ProjectPageContent() {
             require("@/app/assets/projects/BLE/ble 8.jpg"),
           ],
         }
+      : slug === "feed4me"
+      ? {
+          title: "Feed4Me - Digital Food Ecosystem",
+          icon: require("@/app/assets/FEED4ME.png"),
+          description:
+            "Feed4Me is an app-based digital food ecosystem platform that connects farmers, retailers, NGOs, and consumers, focusing on smooth crop sell-purchase, efficient storage facilities, and food waste management. It offers comprehensive features including real-time weather alerts, a news blog, a Crop Encyclopedia, chat functionality, multilingual support, and mapping tools. Feed4Me promotes transparency and collaboration across the food supply chain by enabling direct communication and transactions among participants. It empowers customers to access fresh farm produce, NGOs to monitor and redistribute food waste, and farmers to sell their crops directly while managing storage and learning from educational content. The platform supports sustainable practices by reducing food waste, improving efficiency, and creating passive income opportunities through shared storage. Overall, Feed4Me aims to foster a smarter, more sustainable food future by integrating technology, real-time data, and community participation for all stakeholders in the food ecosystem.",
+          link: "https://docs.google.com/document/d/1gYl99UrFIsS4HHEOWRQzdk2NtEcPepuVNsL6sbVVlX4/edit?usp=sharing",
+          features: (
+            <ul className="list-disc pl-5">
+              {" "}
+              <li>
+                {" "}
+                <b>Customer App Features</b>:{" "}
+                <ul className="list-disc pl-5">
+                  {" "}
+                  <li>
+                    <b>Fresh produce access</b>: Direct connection with local
+                    farmers for farm-fresh vegetables and grains.
+                  </li>{" "}
+                  <li>
+                    <b>Food waste reporting</b>: Easily report food wastage to
+                    help improve sustainability.
+                  </li>{" "}
+                  <li>
+                    <b>Storage rental for passive income</b>: Rent or share
+                    storage spaces for agricultural produce.
+                  </li>{" "}
+                  <li>
+                    <b>Real-time chat</b>: Instant communication with farmers
+                    and storage providers for coordination.
+                  </li>{" "}
+                  <li>
+                    <b>Order tracking</b>: Track your orders and deliveries with
+                    automated alerts.
+                  </li>{" "}
+                  <li>
+                    <b>Multilingual support</b>: Access the app in your
+                    preferred language for better usability.
+                  </li>{" "}
+                </ul>{" "}
+              </li>{" "}
+              <br />
+              <li>
+                {" "}
+                <b>NGO App Features</b>:{" "}
+                <ul className="list-disc pl-5">
+                  {" "}
+                  <li>
+                    <b>Food waste tracking</b>: Monitor surplus and wasted food
+                    with real-time data and reports.
+                  </li>{" "}
+                  <li>
+                    <b>Food distribution management</b>: Coordinate collection
+                    and delivery of food donations efficiently.
+                  </li>{" "}
+                  <li>
+                    <b>Feed humans and cattle</b>: Channel excess food to both
+                    people in need and livestock.
+                  </li>{" "}
+                  <li>
+                    <b>Collaboration and communication</b>: Seamless interaction
+                    with farmers, storage, and donors via chat and
+                    notifications.
+                  </li>{" "}
+                  <li>
+                    <b>Integration with food waste management system</b>:
+                    Supports eco-friendly, transparent food redistribution.
+                  </li>{" "}
+                </ul>{" "}
+              </li>{" "}
+              <br />
+              <li>
+                {" "}
+                <b>Farmer App Features</b>:{" "}
+                <ul className="list-disc pl-5">
+                  {" "}
+                  <li>
+                    <b>Crop sell/trade marketplace</b>: Easily sell and trade
+                    crops directly without brokers.
+                  </li>{" "}
+                  <li>
+                    <b>Storage access and mapping</b>: Find and book nearby
+                    storage facilities with geolocation.
+                  </li>{" "}
+                  <li>
+                    <b>Food waste reporting</b>: Report surplus crops to reduce
+                    waste.
+                  </li>{" "}
+                  <li>
+                    <b>Learning resources</b>: Access YouTube videos, Crop
+                    Encyclopedia, and government scheme info.
+                  </li>{" "}
+                  <li>
+                    <b>Real-time chat</b>: Communicate with customers and
+                    storage owners for efficient coordination.
+                  </li>{" "}
+                  <li>
+                    <b>Weather alerts</b>: Get location-specific weather
+                    forecasts to plan farming activities.
+                  </li>{" "}
+                  <li>
+                    <b>Secure payment facility</b>: Safe, integrated digital
+                    payments between farmers and buyers.
+                  </li>{" "}
+                  <li>
+                    <b>Multilingual support</b>: Interface tailored for various
+                    local languages.
+                  </li>{" "}
+                  <li>
+                    <b>News blog</b>: Stay updated with the latest
+                    agriculture-related news and trends.
+                  </li>{" "}
+                </ul>{" "}
+              </li>{" "}
+            </ul>
+          ),
+          Technologies: [
+            {
+              name: "React Native",
+              link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+            },
+            {
+              name: "TypeScript",
+              link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-plain.svg",
+            },
+            {
+              name: "Tailwind CSS",
+              link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+            },
+            {
+              name: "Expo",
+              link: "",
+            },
+            {
+              name: "AWS",
+              link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
+            },
+            {
+              name: "Docker",
+              link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg",
+            },
+            {
+              name: "MongoDB",
+              link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
+            },
+          ],
+          images: [
+            require("@/app/assets/projects/FEED4ME/one.jpeg"),
+            require("@/app/assets/projects/FEED4ME/two.jpeg"),
+            require("@/app/assets/projects/FEED4ME/three.jpeg"),
+          ],
+        }
       : null;
 
   if (!slug || !AppDetails) {
@@ -375,7 +521,7 @@ function ProjectPageContent() {
           <Link href={AppDetails?.link} target="_blank">
             <Button className="my-2 bg-gray-700 hover:bg-gray-600 text-white">
               <div className="flex gap-3 items-center justify-center">
-                <Download size={20} /> Download apk
+                <Download size={20} /> Download app
               </div>
             </Button>
           </Link>
@@ -413,7 +559,7 @@ function ProjectPageContent() {
       </section>
 
       <section className="mt-10">
-        <h2 className="text-2xl font-semibold">App Screenshots</h2>
+        <h2 className="text-2xl font-semibold">Related Images</h2>
         <Coursoul Data={AppDetails?.images} />
       </section>
     </div>
