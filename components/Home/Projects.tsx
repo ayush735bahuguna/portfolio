@@ -56,7 +56,7 @@ export default function Projects() {
               link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
             },
           ]}
-          link="https://docs.google.com/document/d/1gYl99UrFIsS4HHEOWRQzdk2NtEcPepuVNsL6sbVVlX4/edit?usp=sharing"
+          link=""
           imageUrl={Feed4MeImage}
         />
 
@@ -82,7 +82,7 @@ export default function Projects() {
               link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg",
             },
           ]}
-          link=""
+          link="https://play.google.com/store/apps/details?id=com.ayushbahuguna1122.overshare"
           imageUrl={OverShareImage}
         />
 

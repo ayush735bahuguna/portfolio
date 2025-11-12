@@ -19,7 +19,7 @@ export default function ProjectCard({
   slug?: string | null;
 }) {
   return (
-    <Link href={slug ? "/Project?slug=" + slug : link}>
+    <Link href={link ? link : "/Project?slug=" + slug} target="_blank">
       <div className=" bg-slate-800 rounded-2xl p-5 my-4 flex flex-row items-center justify-between max-md:justify-center flex-wrap-reverse md:mx-10">
         <div className="md:w-1/2 max-md:w-full">
           <p className="text-2xl font-semibold text-white">{name}</p>

@@ -201,7 +201,7 @@ function ProjectPageContent() {
           icon: require("@/app/assets/projects/overshare/icon.png"),
           description:
             "OverShare is a React Native-based productivity app that transforms your home screen into an interactive reminder board. It allows users to create, edit, and pin notes directly onto wallpapers, ensuring important information is always in sight. Users can personalize notes with custom colors, select wallpapers from their gallery, or use predefined solid color themes. The app also supports real-time note search, sharing via other apps, and smooth animations for an intuitive experience. With features like light/dark mode adaptation, gesture-based note adjustments, and a visually appealing UI, OverShare enhances productivity while keeping things stylish.",
-          link: "https://drive.google.com/drive/folders/18wgLJPpnZ-y3WczFFSYImtWZSuiSfOXG?usp=drive_link",
+          link: "https://play.google.com/store/apps/details?id=com.ayushbahuguna1122.overshare",
           features: (
             <ul className="list-disc pl-5">
               <li>
