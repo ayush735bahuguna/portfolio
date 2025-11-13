@@ -2,66 +2,36 @@ import React from "react";
 
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { FileBadge, Home, MailIcon, Star } from "lucide-react";
-import {
-  GitHubLogoIcon,
-  InstagramLogoIcon,
-  LinkedInLogoIcon,
-} from "@radix-ui/react-icons";
 
 export default function Navbar() {
   return (
-    <nav className="sticky top-0 w-screen backdrop:blur-sm h-14 bg-slate-900 p-5 flex justify-between items-center gap-5 border-b-2 border-gray-800 overflow-x-scroll overflow-y-hidden z-50">
+    <nav className="sticky md:px-28 max-md:px-5 top-0 backdrop-blur-sm h-14 bg-slate-950/65 p-5 flex justify-between items-center gap-5 border-b-2 border-gray-900 overflow-x-scroll overflow-y-hidden z-50">
+      <Link href={"#Home"}>
+        <p>Ayush bahuguna</p>
+      </Link>
       <div>
-        <Link href={"#Home"}>
+        <Link
+          href={
+            "https://drive.google.com/file/d/1hegdSp6lI4kw-sEzMG6tnjKGj3JYP0oq/view?usp=sharing"
+          }
+          target="_blank"
+        >
           <Button variant={"link"} className="text-white gap-2">
-            <Home size={17} />
-            <p>Home</p>
+            <p>Resume</p>
           </Button>
         </Link>
 
-        <Link href={"#Projects"}>
+        <Link href={"/Projects/#"}>
           <Button variant={"link"} className="text-white gap-2">
-            <FileBadge size={17} />
             <p>Projects</p>
           </Button>
         </Link>
 
-        <Link href={"#Skills"}>
+        <Link href={"/Techstack/#"}>
           <Button variant={"link"} className="text-white gap-2">
-            <Star size={17} />
-            <p>Skills</p>
+            <p>Tech Stack</p>
           </Button>
         </Link>
-
-        <Link href={"#Contact"}>
-          <Button variant={"link"} className="text-white gap-2">
-            <MailIcon size={17} />
-            <p>Contact Me</p>
-          </Button>
-        </Link>
-      </div>
-
-      <div>
-        <div className="flex gap-6 flex-row text-white">
-          <Link href={"https://github.com/ayush735bahuguna"} target="_blank">
-            <GitHubLogoIcon />
-          </Link>
-          <Link
-            href={"https://www.linkedin.com/in/ayushbahuguna"}
-            target="_blank"
-          >
-            <LinkedInLogoIcon />
-          </Link>
-          <Link
-            href={
-              "https://www.instagram.com/ayush.bahuguna.a?igsh=emw1bzFvZGZiZ3dm"
-            }
-            target="_blank"
-          >
-            <InstagramLogoIcon />
-          </Link>
-        </div>
       </div>
     </nav>
   );

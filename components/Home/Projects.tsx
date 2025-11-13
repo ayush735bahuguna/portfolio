@@ -3,25 +3,20 @@ import ProjectCard from "./Components/Projects/ProjectCard";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import SplitzyImage from "@/app/assets/splitzy.png";
-import OverShareImage from "@/app/assets/overshare.png";
+// import OverShareImage from "@/app/assets/overshare.png";
 import Feed4MeImage from "@/app/assets/FEED4ME.png";
 
 export default function Projects() {
   return (
-    <div
-      id="Projects"
-      className="min-h-screen w-screen border-b-2 border-gray-800 bg-black"
-    >
-      <div className="py-20">
-        <p className="text-4xl text-center font-bold text-white">
-          Featured Projects
-        </p>
-        <p className="text-center text-slate-300 p-4">
+    <div id="Projects" className="md:px-28 max-md:px-5 pt-10 bg-black">
+      <div className="pb-20">
+        <p className="text-4xl text-white">Featured Projects</p>
+        <p className=" text-slate-400 pt-1">
           Focused on the experience, driven by the engineering.
         </p>
       </div>
 
-      <div className="px-5">
+      <div className="flex flex-wrap justify-center items-center flex-row">
         <ProjectCard
           name="Feed4Me - Digital Food Ecosystem"
           slug={"feed4me"}
@@ -60,7 +55,7 @@ export default function Projects() {
           imageUrl={Feed4MeImage}
         />
 
-        <ProjectCard
+        {/* <ProjectCard
           name="OverShare - Wallpaper notes for productivity"
           slug={"overshare"}
           description="A productivity-focused wallpaper app that allows users to create, customize, and display notes directly on their home screen. Features include note pinning, custom colors, search, and sharing, along with personalized wallpapers using gallery images or color themes. Built with a user-friendly UI, smooth animations, and light/dark mode support."
@@ -84,7 +79,7 @@ export default function Projects() {
           ]}
           link="https://play.google.com/store/apps/details?id=com.ayushbahuguna1122.overshare"
           imageUrl={OverShareImage}
-        />
+        /> */}
 
         <ProjectCard
           name="Splitzy - Simplify expenses"
@@ -124,7 +119,7 @@ export default function Projects() {
 
       <Link
         href={"/Projects"}
-        className="flex p-5 justify-center items-center flex-row my-10 w-screen hover:underline gap-3 cursor-pointer text-white"
+        className="flex p-5 justify-center items-center flex-row my-10 hover:underline gap-3 cursor-pointer text-white"
       >
         <p>More Projects</p>
         <ArrowRight size={17} />

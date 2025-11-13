@@ -19,17 +19,27 @@ export default function ProjectCard({
   slug?: string | null;
 }) {
   return (
-    <Link href={link ? link : "/Project?slug=" + slug} target="_blank">
-      <div className=" bg-slate-800 rounded-2xl p-5 my-4 flex flex-row items-center justify-between max-md:justify-center flex-wrap-reverse md:mx-10">
-        <div className="md:w-1/2 max-md:w-full">
+    <Link
+      href={link ? link : "/Project?slug=" + slug}
+      target="_blank"
+      className="md:w-1/2 p-2"
+    >
+      <div
+        className="bg-slate-900/70 rounded-2xl flex flex-col
+       items-center justify-between max-md:justify-center flex-wrap-reverse overflow-hidden"
+      >
+        <Image src={imageUrl} className="w-1/2 h-auto contain" alt="" />
+
+        <div className="p-5 gap-3 flex-col flex">
           <p className="text-2xl font-semibold text-white">{name}</p>
-          <p className="text-slate-400 py-2">{description}</p>
-          <div className="flex flex-wrap">
+          <p className="text-slate-400">{description.slice(0, 150)}...</p>
+
+          <div className="flex flex-wrap gap-2">
             {Technologies?.map((Skill, index) => {
               return (
                 <span
                   key={index}
-                  className="m-2 gap-2 flex justify-center items-center bg-slate-900 rounded-md w-fit px-2 py-1"
+                  className="gap-2 flex justify-center items-center rounded-full py-1 w-fit px-2 bg-slate-950"
                 >
                   {Skill.link && (
                     <Image
@@ -46,11 +56,6 @@ export default function ProjectCard({
             })}
           </div>
         </div>
-        <Image
-          src={imageUrl}
-          className="md:w-1/2 max-md:w-full h-auto max-w-[500px]"
-          alt=""
-        />
       </div>
     </Link>
   );

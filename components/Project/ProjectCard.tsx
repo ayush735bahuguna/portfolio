@@ -17,23 +17,25 @@ export default function ProjectCard({
   };
 }) {
   return (
-    <div className="flex bg-slate-800 justify-center items-center m-1 rounded-lg w-screen max-md:flex-col-reverse">
-      <div className="rounded-lg p-4 md:w-1/2">
-        <div
-          style={{ fontWeight: 700 }}
-          className="text-2xl py-3 ms-2 text-white"
-        >
+    <div
+      className="bg-slate-900/70 rounded-2xl flex flex-col
+       items-center justify-between max-md:justify-center flex-wrap-reverse overflow-hidden md:w-[48%]"
+    >
+      <Image src={data.imgUrl} className="h-auto contain m-auto" alt="" />
+
+      <div className="rounded-lg p-4 flex gap-5 flex-col">
+        <div style={{ fontWeight: 700 }} className="text-2xl text-white">
           {data.Name}
         </div>
-        <div className="text-sm text-slate-300 ms-2">{data.Description}</div>
+        <p className="text-slate-400">{data.Description.slice(0, 150)}...</p>
 
-        <div className="flex flex-wrap pt-4">
+        <div className="flex flex-wrap gap-2">
           {data?.Technologies?.map(
             (Skill: { name: string; link: string }, index: number) => {
               return (
                 <span
                   key={index}
-                  className="m-2 gap-2 flex justify-center items-center bg-slate-900 rounded-md w-fit px-2 py-1"
+                  className="gap-2 flex justify-center items-center rounded-full py-1 w-fit px-2 bg-slate-950"
                 >
                   {Skill.link && (
                     <Image
@@ -51,7 +53,7 @@ export default function ProjectCard({
           )}
         </div>
 
-        <div className="flex gap-3 py-5 ms-2">
+        <div className="flex gap-3">
           <Link href={data.url} target="_blank">
             <Button
               variant={"secondary"}
@@ -71,9 +73,6 @@ export default function ProjectCard({
             </Link>
           )}
         </div>
-      </div>
-      <div className="p-5 md:w-1/2 max-w-[500px]">
-        <Image src={data.imgUrl} className="h-auto rounded-lg " alt="" />
       </div>
     </div>
   );

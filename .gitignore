@@ -34,3 +34,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+
+# https://callumhayes.framer.website/   hero section
+# https://adaptify.framer.website/      contact me (and layout)
