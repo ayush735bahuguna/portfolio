@@ -1,9 +1,16 @@
+import { cn } from "@/lib/utils";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { StaticImageData } from "next/dist/shared/lib/get-img-props";
 import Image from "next/image";
 import React, { useRef } from "react";
 
-export default function Coursoul({ Data }: { Data: StaticImageData[] }) {
+export default function Coursoul({
+  Data,
+  landscape = false,
+}: {
+  Data: StaticImageData[];
+  landscape: boolean;
+}) {
   const containerRef = useRef<HTMLDivElement>(null);
   const slideRef = useRef<HTMLDivElement>(null);
   if (!Data) return null;
@@ -19,13 +26,16 @@ export default function Coursoul({ Data }: { Data: StaticImageData[] }) {
             <div
               key={i}
               ref={slideRef}
-              className="w-[220px] h-auto flex items-center justify-between flex-col m-2 flex-shrink-0 relative"
+              className={cn(
+                " h-auto flex items-center justify-between  rounded-xl flex-col m-2 flex-shrink-0 relative overflow-hidden",
+                landscape ? "w-[400px]" : "w-[220px]"
+              )}
             >
               <Image
                 src={e}
                 blurDataURL={e?.blurDataURL}
                 alt=""
-                className="object-cover w-full h-full rounded-xl"
+                className="object-cover w-full h-full hover:scale-105 transition-all cursor-pointer select-none "
               />
             </div>
           );

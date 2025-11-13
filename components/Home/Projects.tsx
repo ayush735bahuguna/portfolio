@@ -93,7 +93,7 @@ export default function Projects() {
         />
       </div>
 
-      <div className="flex flex-row max-md:flex-col-reverse mt-14 group hover:bg-slate-900 cursor-pointer transition-all rounded-xl overflow-hidden">
+      <div className="flex flex-row max-md:flex-col-reverse mt-14 group border border-slate-800 hover:bg-slate-900 cursor-pointer transition-all rounded-xl overflow-hidden">
         <div className="flex flex-col w-1/2 max-md:w-full  p-10 max-md:p-2 max-md:pt-5 items-start justify-center gap-5">
           <p className="text-3xl font-semibold text-white">
             OverShare - Wallpaper notes for productivity

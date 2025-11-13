@@ -2,7 +2,7 @@
 import React from "react";
 import Coursoul from "@/components/Project/Coursoul";
 import { Button } from "@/components/ui/button";
-import { Download } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
@@ -502,40 +502,23 @@ function ProjectPageContent() {
     );
   }
   return (
-    <div className="p-5 bg-black text-white">
-      <section className="bg-slate-900 p-4 rounded-xl">
-        <h1 className="text-2xl font-bold my-2">{AppDetails?.title}</h1>
-
-        <div className="flex items-center justify-between flex-wrap-reverse">
-          <p className="sm:w-2/3">{AppDetails?.description}</p>
-          {AppDetails?.icon && (
-            <Image
-              src={AppDetails?.icon}
-              blurDataURL={AppDetails?.icon?.blurDataURL}
-              className="w-[150px] h-[150px] rounded-xl flex-grow-0 sm:m-3 max-sm:my-4"
-              alt={"SplitzyIcon"}
-            />
-          )}
-        </div>
-        {AppDetails?.link && (
-          <Link href={AppDetails?.link} target="_blank">
-            <Button className="my-2 bg-gray-700 hover:bg-gray-600 text-white">
-              <div className="flex gap-3 items-center justify-center">
-                <Download size={20} /> Download app
-              </div>
-            </Button>
-          </Link>
-        )}
-      </section>
-
-      <section className="mt-5 p-4 rounded-xl">
-        <h2 className="text-2xl font-semibold my-2">Tech Stack</h2>
-        <div className="flex flex-wrap">
+    <div className="p-5 bg-black pt-9 text-white md:px-28 max-md:px-5">
+      {/* {AppDetails?.icon && (
+        <Image
+          src={AppDetails?.icon}
+          blurDataURL={AppDetails?.icon?.blurDataURL}
+          className="w-[150px] h-[150px] rounded-xl mb-6"
+          alt={"Icon"}
+        />
+      )} */}
+      <div className="flex flex-col gap-3">
+        <h1 className="text-4xl font-bold my-2">{AppDetails?.title}</h1>
+        <div className="flex flex-wrap gap-2">
           {AppDetails?.Technologies?.map((Skill, index) => {
             return (
               <span
                 key={index}
-                className="m-2 gap-2 flex justify-center items-center bg-slate-900 rounded-md w-fit px-2 py-1"
+                className="gap-2 flex justify-center items-center bg-slate-900 rounded-full w-fit px-2 py-1"
               >
                 {Skill.link && (
                   <Image
@@ -551,16 +534,25 @@ function ProjectPageContent() {
             );
           })}
         </div>
-      </section>
+        {AppDetails?.link && (
+          <Link href={AppDetails?.link} target="_blank">
+            <Button className="my-2 bg-gray-800 hover:bg-gray-700 text-white">
+              <div className="flex gap-3 items-center justify-center">
+                <ExternalLink size={20} /> Download app
+              </div>
+            </Button>
+          </Link>
+        )}
+      </div>
 
-      <section className="mt-5 bg-slate-900 p-4 rounded-xl">
-        <h2 className="text-2xl font-semibold my-2">Features</h2>
+      <Coursoul Data={AppDetails?.images} landscape={slug === "feed4me"} />
+
+      <p className="text-xl font-bold my-2">Description</p>
+      <p className="text-slate-300">{AppDetails?.description}</p>
+
+      <section className="my-20 rounded-xl ">
+        <h2 className="text-2xl font-bold my-2">Features</h2>
         {AppDetails?.features}
-      </section>
-
-      <section className="mt-10">
-        <h2 className="text-2xl font-semibold">Related Images</h2>
-        <Coursoul Data={AppDetails?.images} />
       </section>
     </div>
   );
