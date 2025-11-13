@@ -2,6 +2,7 @@ import React from "react";
 
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { Code, FileJson2Icon, FolderCodeIcon, MailIcon } from "lucide-react";
 
 export default function Navbar() {
   return (
@@ -17,24 +18,29 @@ export default function Navbar() {
           target="_blank"
         >
           <Button variant={"link"} className="text-white gap-2">
-            <p>Resume</p>
+            <FileJson2Icon size={17} />
+            <p className="max-sm:hidden">Resume</p>
           </Button>
         </Link>
 
         <Link href={"/Projects/#"}>
           <Button variant={"link"} className="text-white gap-2">
-            <p>Projects</p>
+            <FolderCodeIcon size={17} />
+
+            <p className="max-sm:hidden">Projects</p>
           </Button>
         </Link>
 
         <Link href={"/Techstack/#"}>
           <Button variant={"link"} className="text-white gap-2">
-            <p>Tech Stack</p>
+            <Code size={17} />
+            <p className="max-sm:hidden">Tech Stack</p>
           </Button>
         </Link>
         <Link href={"/Contact/#"}>
           <Button variant={"link"} className="text-white gap-2">
-            <p>Contact</p>
+            <MailIcon size={17} />
+            <p className="max-sm:hidden">Contact</p>
           </Button>
         </Link>
       </div>

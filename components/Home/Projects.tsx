@@ -1,10 +1,12 @@
 import React from "react";
 import ProjectCard from "./Components/Projects/ProjectCard";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, ExternalLink } from "lucide-react";
 import Link from "next/link";
 import SplitzyImage from "@/app/assets/splitzy.png";
-// import OverShareImage from "@/app/assets/overshare.png";
+import OverShareImage from "@/app/assets/overshare.png";
 import Feed4MeImage from "@/app/assets/FEED4ME.png";
+import Image from "next/image";
+import { Button } from "../ui/button";
 
 export default function Projects() {
   return (
@@ -55,32 +57,6 @@ export default function Projects() {
           imageUrl={Feed4MeImage}
         />
 
-        {/* <ProjectCard
-          name="OverShare - Wallpaper notes for productivity"
-          slug={"overshare"}
-          description="A productivity-focused wallpaper app that allows users to create, customize, and display notes directly on their home screen. Features include note pinning, custom colors, search, and sharing, along with personalized wallpapers using gallery images or color themes. Built with a user-friendly UI, smooth animations, and light/dark mode support."
-          Technologies={[
-            {
-              name: "React native",
-              link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
-            },
-            {
-              name: "Expo",
-              link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg",
-            },
-            {
-              name: "Reanimated",
-              link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg",
-            },
-            {
-              name: "nativewind (tailwind css)",
-              link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg",
-            },
-          ]}
-          link="https://play.google.com/store/apps/details?id=com.ayushbahuguna1122.overshare"
-          imageUrl={OverShareImage}
-        /> */}
-
         <ProjectCard
           name="Splitzy - Simplify expenses"
           slug={"splitzy"}
@@ -124,6 +100,77 @@ export default function Projects() {
         <p>More Projects</p>
         <ArrowRight size={17} />
       </Link>
+
+      <div className="flex flex-row max-md:flex-col-reverse mb-24">
+        <div className="flex flex-col p-10 max-md:p-2 max-md:pt-5 items-start justify-center gap-5">
+          <p className="text-3xl font-semibold text-white">
+            OverShare - Wallpaper notes for productivity
+          </p>
+          <p className="text-slate-400">
+            {
+              "A productivity-focused wallpaper app that allows users to create, customize, and display notes directly on their home screen. Features include note pinning, custom colors, search, and sharing, along with personalized wallpapers using gallery images or color themes. Built with a user-friendly UI, smooth animations, and light/dark mode support."
+            }
+          </p>
+          <div className="flex gap-2 flex-wrap">
+            {[
+              {
+                name: "React native",
+                link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+              },
+              {
+                name: "Expo",
+                link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg",
+              },
+              {
+                name: "Reanimated",
+                link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg",
+              },
+              {
+                name: "nativewind (tailwind css)",
+                link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg",
+              },
+            ]?.map((Skill, index) => {
+              return (
+                <span
+                  key={index}
+                  className="gap-2 flex justify-center items-center rounded-full py-1 w-fit px-2 bg-slate-900"
+                >
+                  {Skill.link && (
+                    <Image
+                      src={Skill.link}
+                      width={15}
+                      height={15}
+                      className="aspect-square"
+                      alt={Skill.name}
+                    />
+                  )}
+                  <p className="text-[12px] text-slate-400">{Skill.name}</p>
+                </span>
+              );
+            })}
+          </div>
+
+          <Link
+            href={
+              "https://play.google.com/store/apps/details?id=com.ayushbahuguna1122.overshare"
+            }
+            target="_blank"
+          >
+            <Button
+              variant={"secondary"}
+              className="bg-slate-800 hover:bg-slate-700 text-white"
+            >
+              <ExternalLink size={17} />
+              &nbsp; Downlod from Playstore
+            </Button>
+          </Link>
+        </div>
+        <Image
+          src={OverShareImage}
+          className="w-1/2 max-md:w-full h-auto contain"
+          alt=""
+        />
+      </div>
     </div>
   );
 }

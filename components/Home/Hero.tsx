@@ -17,7 +17,7 @@ export default function Hero() {
     >
       <Image
         src={require("@/app/assets/pic.jpeg")}
-        className="w-28 aspect-square rounded-full"
+        className="w-28 aspect-square rounded-full hover:scale-95 transition-all cursor-pointer"
         alt="profile pic"
       />
       <p className="text-5xl text-whitesmoke max-md:text-3xl">
