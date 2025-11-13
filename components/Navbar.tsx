@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function Navbar() {
   return (
     <nav className="sticky md:px-28 max-md:px-5 top-0 backdrop-blur-sm h-14 bg-slate-950/65 p-5 flex justify-between items-center gap-5 border-b-2 border-gray-900 overflow-x-scroll overflow-y-hidden z-50">
-      <Link href={"#Home"}>
+      <Link href={"/#Home"}>
         <p>Ayush bahuguna</p>
       </Link>
       <div>
@@ -30,6 +30,11 @@ export default function Navbar() {
         <Link href={"/Techstack/#"}>
           <Button variant={"link"} className="text-white gap-2">
             <p>Tech Stack</p>
+          </Button>
+        </Link>
+        <Link href={"/Contact/#"}>
+          <Button variant={"link"} className="text-white gap-2">
+            <p>Contact</p>
           </Button>
         </Link>
       </div>
