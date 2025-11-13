@@ -93,16 +93,8 @@ export default function Projects() {
         />
       </div>
 
-      <Link
-        href={"/Projects"}
-        className="flex p-5 justify-center items-center flex-row my-10 hover:underline gap-3 cursor-pointer text-white"
-      >
-        <p>More Projects</p>
-        <ArrowRight size={17} />
-      </Link>
-
-      <div className="flex flex-row max-md:flex-col-reverse mb-24">
-        <div className="flex flex-col p-10 max-md:p-2 max-md:pt-5 items-start justify-center gap-5">
+      <div className="flex flex-row max-md:flex-col-reverse mt-14 group hover:bg-slate-900 cursor-pointer transition-all rounded-xl overflow-hidden">
+        <div className="flex flex-col w-1/2 max-md:w-full  p-10 max-md:p-2 max-md:pt-5 items-start justify-center gap-5">
           <p className="text-3xl font-semibold text-white">
             OverShare - Wallpaper notes for productivity
           </p>
@@ -165,12 +157,21 @@ export default function Projects() {
             </Button>
           </Link>
         </div>
-        <Image
-          src={OverShareImage}
-          className="w-1/2 max-md:w-full h-auto contain"
-          alt=""
-        />
+        <div className="overflow-hidden w-1/2 max-md:w-full ">
+          <Image
+            src={OverShareImage}
+            className="h-auto contain group-hover:scale-125 transition-all"
+            alt=""
+          />
+        </div>
       </div>
+      <Link
+        href={"/Projects"}
+        className="flex p-5 justify-center items-center flex-row my-10 hover:underline gap-3 cursor-pointer text-white"
+      >
+        <p>More Projects</p>
+        <ArrowRight size={17} />
+      </Link>
     </div>
   );
 }

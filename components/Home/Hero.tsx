@@ -21,13 +21,14 @@ export default function Hero() {
         alt="profile pic"
       />
       <p className="text-5xl text-whitesmoke max-md:text-3xl">
-        I&apos;m Ayush Bahuguna, a full-stack developer specializing in seamless
-        mobile experiences from India.
+        I&apos;m Ayush Bahuguna - a Full-Stack Developer and technology
+        enthusiast from India.
       </p>
       <p className="text-2xl text-slate-400 max-md:text-base">
-        Leveraging expertise in React Native, Next js, and Node js, my approach
-        blends technical robustness with intuitive design, further enriching the
-        sleek, user-friendly apps I build.
+        I specialize in creating seamless experiences, leveraging technologies
+        like React Native, Next.js, and Node.js. My approach combines technical
+        precision with intuitive design, resulting in sleek, high-performing,
+        and user-friendly applications.
       </p>
 
       <div className="flex items-center justify-center gap-6">

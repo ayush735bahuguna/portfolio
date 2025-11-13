@@ -27,9 +27,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${manRopeFont.className} antialiased`}>
-        <Navbar />
-        {children}
-        <Footer />
+        <div className="max-w-7xl mx-auto">
+          <Navbar />
+          {children}
+          <Footer />
+        </div>
         <Analytics />
       </body>
     </html>

@@ -22,13 +22,19 @@ export default function ProjectCard({
     <Link
       href={link ? link : "/Project?slug=" + slug}
       target="_blank"
-      className="md:w-1/2 p-2 "
+      className="md:w-1/2 p-2 group"
     >
       <div
-        className="bg-slate-900/70 rounded-2xl flex flex-col hover:scale-95 transition-all
+        className="bg-slate-900/70 hover:bg-slate-900 transition-colors rounded-2xl flex flex-col
        items-center justify-between max-md:justify-center flex-wrap-reverse overflow-hidden"
       >
-        <Image src={imageUrl} className="w-1/2 h-auto contain" alt="" />
+        <div className="w-1/2 overflow-hidden">
+          <Image
+            src={imageUrl}
+            className=" h-auto contain group-hover:scale-125 transition-all"
+            alt=""
+          />
+        </div>
 
         <div className="p-5 gap-3 flex-col flex">
           <p className="text-2xl font-semibold text-white">{name}</p>
