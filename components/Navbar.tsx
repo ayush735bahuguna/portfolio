@@ -8,7 +8,7 @@ export default function Navbar() {
   return (
     <nav className="sticky md:px-28 max-md:px-5 top-0 backdrop-blur-sm h-14 bg-slate-950/65 p-5 flex justify-between items-center gap-4 overflow-x-scroll overflow-y-hidden z-50">
       <Link href={"/#Home"}>
-        <p>Ayush bahuguna</p>
+        <p>Ayush</p>
       </Link>
       <div>
         <Link
