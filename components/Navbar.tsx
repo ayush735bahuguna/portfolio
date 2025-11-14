@@ -6,7 +6,7 @@ import { Code, FileJson2Icon, FolderCodeIcon, MailIcon } from "lucide-react";
 
 export default function Navbar() {
   return (
-    <nav className="sticky md:px-28 max-md:px-5 top-0 backdrop-blur-sm h-14 bg-slate-950/65 p-5 flex justify-between items-center gap-4 border-b-2 border-gray-900 overflow-x-scroll overflow-y-hidden z-50">
+    <nav className="sticky md:px-28 max-md:px-5 top-0 backdrop-blur-sm h-14 bg-slate-950/65 p-5 flex justify-between items-center gap-4 overflow-x-scroll overflow-y-hidden z-50">
       <Link href={"/#Home"}>
         <p>Ayush bahuguna</p>
       </Link>

@@ -13,7 +13,7 @@ export default async function Page() {
         </p>
       </div>
 
-      <div className="flex flex-wrap pb-10 gap-2">
+      <div className="flex pb-10 flex-row flex-wrap gap-2 max-lg:flex-col">
         {ProjectData?.map(
           (
             item: {

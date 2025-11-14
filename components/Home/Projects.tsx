@@ -1,5 +1,4 @@
 import React from "react";
-// import ProjectCard from "./Components/Projects/ProjectCard";
 import { ArrowRight, ExternalLink } from "lucide-react";
 import Link from "next/link";
 import SplitzyImage from "@/app/assets/splitzy.png";
@@ -7,7 +6,6 @@ import OverShareImage from "@/app/assets/overshare.png";
 import Feed4MeImage from "@/app/assets/FEED4ME.png";
 import Image from "next/image";
 import { Button } from "../ui/button";
-// projectsData.ts or inside the same file
 
 export default function Projects() {
   const projects = [
