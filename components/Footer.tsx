@@ -18,9 +18,11 @@ export default function Footer() {
               Let’s talk projects, collaborations, or anything design!
             </p>
           </div>
-          <Button className="bg-slate-800 hover:bg-slate-700 w-fit">
-            Schedule a call
-          </Button>
+          <Link href="https://cal.com/ayush-bahuguna-keo4nv" target="_blank">
+            <Button className="bg-slate-800 hover:bg-slate-700 w-fit">
+              Schedule a call
+            </Button>
+          </Link>
         </div>
       )}
 

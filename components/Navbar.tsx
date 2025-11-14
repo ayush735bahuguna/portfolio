@@ -19,7 +19,7 @@ export default function Navbar() {
         >
           <Button variant={"link"} className="text-white gap-2">
             <FileJson2Icon size={17} />
-            <p className="max-sm:hidden">Resume</p>
+            <p className="max-lg:hidden">Resume</p>
           </Button>
         </Link>
 
@@ -27,20 +27,20 @@ export default function Navbar() {
           <Button variant={"link"} className="text-white gap-2">
             <FolderCodeIcon size={17} />
 
-            <p className="max-sm:hidden">Projects</p>
+            <p className="max-lg:hidden">Projects</p>
           </Button>
         </Link>
 
         <Link href={"/Techstack/#"}>
           <Button variant={"link"} className="text-white gap-2">
             <Code size={17} />
-            <p className="max-sm:hidden">Tech Stack</p>
+            <p className="max-lg:hidden">Tech Stack</p>
           </Button>
         </Link>
         <Link href={"/Contact/#"}>
           <Button variant={"link"} className="text-white gap-2">
             <MailIcon size={17} />
-            <p className="max-sm:hidden">Contact</p>
+            <p className="max-lg:hidden">Contact</p>
           </Button>
         </Link>
       </div>

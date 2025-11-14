@@ -8,6 +8,7 @@ import {
 } from "@radix-ui/react-icons";
 import { Button } from "../ui/button";
 import { ExternalLink } from "lucide-react";
+import ProfileImage from "@/app/assets/pic.jpeg";
 
 export default function Hero() {
   return (
@@ -16,7 +17,7 @@ export default function Hero() {
       id="Home"
     >
       <Image
-        src={require("@/app/assets/pic.jpeg")}
+        src={ProfileImage}
         className="w-28 aspect-square rounded-full hover:scale-95 transition-all cursor-pointer"
         alt="profile pic"
       />

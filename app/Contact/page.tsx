@@ -1,5 +1,12 @@
 import { cn } from "@/lib/utils";
-import { InstagramIcon, Linkedin, MailIcon, Phone } from "lucide-react";
+import {
+  ChevronRight,
+  InstagramIcon,
+  Linkedin,
+  MailIcon,
+  Phone,
+} from "lucide-react";
+import Link from "next/link";
 import React from "react";
 
 export default function Page() {
@@ -12,7 +19,7 @@ export default function Page() {
     },
     {
       label: "Schedule a call",
-      url: "#",
+      url: "https://cal.com/ayush-bahuguna-keo4nv",
       icon: <Phone />,
       color: "text-yellow-400",
     },
@@ -46,9 +53,10 @@ export default function Page() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full mb-8">
         {connectLinks.map((item, idx) => (
-          <a
+          <Link
             key={idx}
             href={item.url}
+            target="_blank"
             className={cn(
               "flex items-center bg-slate-900 rounded-xl p-4 shadow hover:bg-slate-800 transition group gap-3",
               item.color
@@ -57,9 +65,9 @@ export default function Page() {
             {item.icon}
             <span className="flex-1 text-gray-100">{item.label}</span>
             <span className="ml-auto text-gray-400 group-hover:text-gray-300">
-              &rarr;
+              <ChevronRight />
             </span>
-          </a>
+          </Link>
         ))}
       </div>
 
