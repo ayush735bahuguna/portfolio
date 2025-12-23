@@ -21,10 +21,10 @@ export default function Hero() {
         className="w-28 aspect-square rounded-full hover:scale-95 transition-all cursor-pointer"
         alt="profile pic"
       />
-      <p className="text-5xl text-whitesmoke max-md:text-3xl">
+      <h1 className="text-5xl text-whitesmoke max-md:text-3xl">
         I&apos;m Ayush Bahuguna - a Full-Stack Developer and technology
         enthusiast from India.
-      </p>
+      </h1>
       <p className="text-2xl text-slate-400 max-md:text-base">
         I specialize in creating seamless experiences, leveraging technologies
         like React Native, Next.js, and Node.js. My approach combines technical

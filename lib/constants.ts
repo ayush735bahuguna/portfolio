@@ -1,16 +1,12 @@
 import project1 from "@/app/assets/projects/MERN notes.png";
 import project2 from "@/app/assets/projects/Magic-pictures.png";
 import project3 from "@/app/assets/projects/Nextjs notes.png";
-import project4 from "@/app/assets/projects/chat-link.png";
 import project5 from "@/app/assets/projects/movie-adda.png";
-// import project6 from "@/app/assets/projects/dropbox-clone1.png";
 import project7 from "@/app/assets/projects/Event website.png";
-// import project8 from "@/app/assets/projects/image gallary.png";
 import project9 from "@/app/assets/projects/Google form.png";
 import project10 from "@/app/assets/projects/auth.png";
 import project11 from "@/app/assets/projects/wallywals.png";
 import project12 from "@/app/assets/projects/food recipie.png";
-// import project13 from "@/app/assets/projects/messanger ui.png";
 import { StaticImageData } from "next/image";
 
 export const SkillJSON: { name: string; link: string }[] = [
@@ -196,40 +192,40 @@ export const ProjectData: {
     GithubLink: "",
     imgUrl: require("@/app/assets/Social media.png"),
   },
-  {
-    Name: "MERN Chat App",
-    Description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam quia voluptate eaque quo sequi quod autem quibusdam provident, reiciendis cumque nobis nihil earum deleniti incidunt laborum, soluta cum, accusamus amet dolor? Blanditiis nobis ullam aut dolores voluptate vel quae repellat doloremque perspiciatis rem corrupti, unde voluptatem quas quos sapiente voluptas tenetur ad hic excepturi aperiam eos dignissimos consequuntur, vero itaque. Deleniti sint ullam iure reiciendis, iste voluptatem. Praesentium, distinctio maxime, porro nesciunt neque ipsum sapiente dicta quam aliquam dolorem maiores dolores. In, ducimus aperiam",
-    imgUrl: project4,
-    url: "https://chat-link.netlify.app/",
-    Technologies: [
-      {
-        name: "React Js",
-        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
-      },
-      {
-        name: "Node Js",
-        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg",
-      },
-      {
-        name: "express Js",
-        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg",
-      },
-      {
-        name: "Bootstrap",
-        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg",
-      },
-      {
-        name: "Mongo DB",
-        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
-      },
-      {
-        name: "JavaScript",
-        link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
-      },
-    ],
-    GithubLink: "https://github.com/ayush735bahuguna/MERN-chat-app",
-  },
+  // {
+  //   Name: "MERN Chat App",
+  //   Description:
+  //     "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam quia voluptate eaque quo sequi quod autem quibusdam provident, reiciendis cumque nobis nihil earum deleniti incidunt laborum, soluta cum, accusamus amet dolor? Blanditiis nobis ullam aut dolores voluptate vel quae repellat doloremque perspiciatis rem corrupti, unde voluptatem quas quos sapiente voluptas tenetur ad hic excepturi aperiam eos dignissimos consequuntur, vero itaque. Deleniti sint ullam iure reiciendis, iste voluptatem. Praesentium, distinctio maxime, porro nesciunt neque ipsum sapiente dicta quam aliquam dolorem maiores dolores. In, ducimus aperiam",
+  //   imgUrl: project4,
+  //   url: "https://chat-link.netlify.app/",
+  //   Technologies: [
+  //     {
+  //       name: "React Js",
+  //       link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+  //     },
+  //     {
+  //       name: "Node Js",
+  //       link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg",
+  //     },
+  //     {
+  //       name: "express Js",
+  //       link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg",
+  //     },
+  //     {
+  //       name: "Bootstrap",
+  //       link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg",
+  //     },
+  //     {
+  //       name: "Mongo DB",
+  //       link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
+  //     },
+  //     {
+  //       name: "JavaScript",
+  //       link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+  //     },
+  //   ],
+  //   GithubLink: "https://github.com/ayush735bahuguna/MERN-chat-app",
+  // },
   {
     Name: "Custom Authentication MERN",
     Description:
