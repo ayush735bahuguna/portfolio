@@ -1,498 +1,28 @@
 "use client";
-import React from "react";
+import { PROJECT_DETAILS, ProjectDetail } from "@/constants";
 import Coursoul from "@/components/Project/Coursoul";
-import { Button } from "@/components/ui/button";
-import { ExternalLink } from "lucide-react";
-import Image, { StaticImageData } from "next/image";
+import { MagicButton } from "@/components/MagicButton";
+import {
+  ExternalLink,
+  Target,
+  Lightbulb,
+  PenTool,
+  Cpu,
+  AlertCircle,
+  Users,
+  CheckCircle2,
+  ArrowLeft as BackIcon,
+} from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
-import { Suspense } from "react";
-
-type AppDetailsType = {
-  title: string;
-  icon: StaticImageData;
-  description: string;
-  link: string;
-  features: JSX.Element;
-  Technologies: { name: string; link: string }[];
-  images: StaticImageData[];
-};
+import React, { Suspense } from "react";
 
 function ProjectPageContent() {
   const searchParams = useSearchParams();
   const slug = searchParams.get("slug");
 
-  const AppDetails: AppDetailsType | null =
-    slug === "splitzy"
-      ? {
-          title: "Splitzy : Simplify Expenses",
-          icon: require("@/app/assets/projects/Splitzy/SplitzyIcon.png"),
-          description:
-            "Splitzy is a smart expense management app designed to simplify the way individuals and groups handle shared and personal finances. Whether you’re splitting bills with friends, managing group trips, or simply tracking your daily expenses, Splitzy ensures everything stays organized and transparent. It offers multiple ways to split costs, automatically adjusts balances when payments are made, and keeps detailed records for accountability. Users can track personal spending trends with charts, generate professional reports, and even manage expenses offline with seamless data sync. With secure login options, app lock protection, and a modern intuitive interface with dark mode, Splitzy is built for both convenience and trust. From roommates to colleagues, travel groups to personal budgets—Splitzy makes expense sharing easy, clear, and hassle-free.",
-          link: "https://drive.google.com/drive/folders/12BgX4XCC47JJA-4WNGVFculIYF-ssWwx?usp=drive_link",
-          features: (
-            <ul className="list-disc pl-5">
-              <li>
-                <b>Expense Management</b>
-                <ul className="list-disc pl-5">
-                  <li>
-                    Track <b>group, personal, and one-on-one expenses</b> with
-                    dedicated tabs.
-                  </li>
-                  <li>
-                    Record and manage spendings across{" "}
-                    <b>friends, roommates, office, and trips</b>.
-                  </li>
-                </ul>
-              </li>
-
-              <li>
-                <b>Flexible Splitting & Settlements</b>
-                <ul className="list-disc pl-5">
-                  <li>
-                    Split expenses{" "}
-                    <b>
-                      equally, by percentage, by shares, or custom contributions
-                    </b>
-                    .
-                  </li>
-                  <li>
-                    Supports <b>single or multiple payers</b> in a transaction.
-                  </li>
-                  <li>
-                    Log payments between users and <b>auto-adjust balances</b>{" "}
-                    instantly.
-                  </li>
-                </ul>
-              </li>
-
-              <li>
-                <b>Offline-First Support</b>
-                <ul className="list-disc pl-5">
-                  <li>
-                    <b>Add and manage expenses</b> without internet
-                    connectivity.
-                  </li>
-                  <li>
-                    <b>Automatic synchronization</b> when online to keep data
-                    updated.
-                  </li>
-                </ul>
-              </li>
-
-              <li>
-                <b>Insights & Reports</b>
-                <ul className="list-disc pl-5">
-                  <li>
-                    View detailed <b>daily, monthly, and yearly statistics</b>.
-                  </li>
-                  <li>
-                    Interactive charts for better visualization of spending.
-                  </li>
-                  <li>
-                    Export professional <b>PDF reports</b> for sharing and
-                    record-keeping.
-                  </li>
-                </ul>
-              </li>
-
-              <li>
-                <b>Notifications & Activity Tracking</b>
-                <ul className="list-disc pl-5">
-                  <li>
-                    Receive alerts for{" "}
-                    <b>new expenses, settlements, and payments</b>.
-                  </li>
-                  <li>
-                    Option to <b>enable/disable notifications</b> as needed.
-                  </li>
-                  <li>
-                    Maintain a detailed <b>activity history</b> with logs and
-                    contextual comments.
-                  </li>
-                </ul>
-              </li>
-
-              <li>
-                <b>User Management</b>
-                <ul className="list-disc pl-5">
-                  <li>
-                    Add new users quickly via <b>QR code scanning</b>.
-                  </li>
-                </ul>
-              </li>
-
-              <li>
-                <b>Security & Privacy</b>
-                <ul className="list-disc pl-5">
-                  <li>
-                    Protect data with <b>app lock</b> for additional
-                    authentication.
-                  </li>
-                  <li>
-                    Enable <b>Google authentication and email sign-in</b> for
-                    secure login.
-                  </li>
-                </ul>
-              </li>
-
-              <li>
-                <b>Modern Interface</b>
-                <ul className="list-disc pl-5">
-                  <li>
-                    Upgraded, <b>intuitive UI</b> for a better user experience.
-                  </li>
-                  <li>
-                    <b>Dark mode support</b> for comfortable usage anytime.
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          ),
-          Technologies: [
-            {
-              name: "React Native",
-              link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
-            },
-            {
-              name: "Typescript",
-              link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-plain.svg",
-            },
-            {
-              name: "Tailwind css",
-              link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
-            },
-            {
-              name: "firebase",
-              link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg",
-            },
-            {
-              name: "Expo",
-              link: "",
-            },
-            {
-              name: "Reanimated",
-              link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg",
-            },
-          ],
-          images: [
-            require("@/app/assets/projects/Splitzy/splitzy-16.jpg"),
-            require("@/app/assets/projects/Splitzy/splitzy-15.jpg"),
-            require("@/app/assets/projects/Splitzy/splitzy-1.jpg"),
-            require("@/app/assets/projects/Splitzy/splitzy-2.jpg"),
-            require("@/app/assets/projects/Splitzy/splitzy-3.jpg"),
-            require("@/app/assets/projects/Splitzy/splitzy-6.jpg"),
-            require("@/app/assets/projects/Splitzy/splitzy-13.jpg"),
-            require("@/app/assets/projects/Splitzy/splitzy-9.jpg"),
-            require("@/app/assets/projects/Splitzy/splitzy-4.jpg"),
-            require("@/app/assets/projects/Splitzy/splitzy-7.jpg"),
-            require("@/app/assets/projects/Splitzy/splitzy-11.jpg"),
-            require("@/app/assets/projects/Splitzy/splitzy-14.jpg"),
-            require("@/app/assets/projects/Splitzy/splitzy-10.jpg"),
-            require("@/app/assets/projects/Splitzy/splitzy-12.jpg"),
-            require("@/app/assets/projects/Splitzy/splitzy-8.jpg"),
-            require("@/app/assets/projects/Splitzy/splitzy-17.jpg"),
-            require("@/app/assets/projects/Splitzy/splitzy-5.jpg"),
-          ],
-        }
-      : slug === "overshare"
-      ? {
-          title: "OverShare: Wallpaper Notes for Productivity",
-          icon: require("@/app/assets/projects/overshare/icon.png"),
-          description:
-            "OverShare is a React Native-based productivity app that transforms your home screen into an interactive reminder board. It allows users to create, edit, and pin notes directly onto wallpapers, ensuring important information is always in sight. Users can personalize notes with custom colors, select wallpapers from their gallery, or use predefined solid color themes. The app also supports real-time note search, sharing via other apps, and smooth animations for an intuitive experience. With features like light/dark mode adaptation, gesture-based note adjustments, and a visually appealing UI, OverShare enhances productivity while keeping things stylish.",
-          link: "https://play.google.com/store/apps/details?id=com.ayushbahuguna1122.overshare",
-          features: (
-            <ul className="list-disc pl-5">
-              <li>
-                <b>Create, update, delete, and pin notes</b> directly on the
-                home screen wallpaper.
-              </li>
-              <li>
-                <b>Personalized note customization</b>: Adjust{" "}
-                <b>colors, opacity, position, and rotation</b> for each note.
-              </li>
-              <li>
-                <b>Wallpaper customization</b>: Choose from{" "}
-                <b>gallery images</b> or <b>prebuilt solid color themes</b>.
-              </li>
-              <li>
-                Smooth <b>animations</b> enhance the user experience.
-              </li>
-              <li>
-                <b>Search & organization</b>: Find notes quickly by title.
-              </li>
-              <li>
-                <b>Note sharing</b>: Easily share notes via any installed app.
-              </li>
-              <li>
-                <b>Wallpaper saving & setting</b>: Download and apply custom
-                wallpapers directly from the app.
-              </li>
-              <li>
-                <b>Beautiful UI with smooth gestures</b>, built using Tailwind
-                CSS and Reanimated.
-              </li>
-              <li>
-                <b>Automatic dark/light mode</b> adapts to the device theme for
-                a seamless experience.
-              </li>
-            </ul>
-          ),
-          Technologies: [
-            {
-              name: "React Native",
-              link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
-            },
-            {
-              name: "Typescript",
-              link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-plain.svg",
-            },
-            {
-              name: "Tailwind css",
-              link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
-            },
-            {
-              name: "Expo",
-              link: "",
-            },
-            {
-              name: "Reanimated",
-              link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg",
-            },
-          ],
-          images: [
-            require("@/app/assets/projects/overshare/overshare (1).jpg"),
-            require("@/app/assets/projects/overshare/overshare (3).png"),
-            require("@/app/assets/projects/overshare/overshare (2).png"),
-            require("@/app/assets/projects/overshare/overshare (4).png"),
-            require("@/app/assets/projects/overshare/overshare (5).png"),
-            require("@/app/assets/projects/overshare/overshare (6).png"),
-          ],
-        }
-      : slug === "ble-connect"
-      ? {
-          title: "BLE Connect",
-          icon: null,
-          description:
-            "A mobile app built with React Native and Expo for monitoring AC units via Bluetooth. BLE Connect displays real-time data like temperature, phase voltages (R, Y, B), and system health indicators. It features color-coded alerts, secure OTP-based authentication via Firebase, and easy Bluetooth pairing with QR codes. The app also allows users to customize the Bluetooth module name and provides comprehensive error handling for system diagnostics.",
-          link: "",
-          features: (
-            <ul className="list-disc pl-5">
-              <li>
-                <b>Real-time monitoring</b>: View temperature, phase voltages
-                (R, Y, B), and other key metrics with <b>color-coded alerts</b>.
-              </li>
-              <li>
-                <b>Error diagnostics</b>: Get detailed system error statuses
-                like phase loss, reverse phase sequence, and high/low voltage
-                conditions.
-              </li>
-              <li>
-                <b>Customizable Bluetooth module name</b>: Change the
-                module&apos;s name directly within the app.
-              </li>
-              <li>
-                <b>QR code-based pairing</b>: Effortlessly connect to the BLE
-                module using a QR code embedded with the MAC address.
-              </li>
-              <li>
-                <b>Secure authentication</b>: Use <b>Firebase OTP login</b> for
-                secure access to the app.
-              </li>
-
-              <li>
-                <b>Comprehensive error handling</b>: Displays fallback screens
-                to manage connection failures and other issues.
-              </li>
-
-              <li>
-                <b>Built-in version tracking</b>: Easily check the module’s{" "}
-                <b>firmware and MCU versions</b>.
-              </li>
-            </ul>
-          ),
-          Technologies: [
-            {
-              name: "React Native",
-              link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
-            },
-            {
-              name: "Typescript",
-              link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-plain.svg",
-            },
-            {
-              name: "Tailwind css",
-              link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
-            },
-            {
-              name: "Expo",
-              link: "",
-            },
-          ],
-          images: [
-            require("@/app/assets/projects/BLE/ble 2.jpg"),
-            require("@/app/assets/projects/BLE/ble 4.jpg"),
-            require("@/app/assets/projects/BLE/ble 3.jpg"),
-            require("@/app/assets/projects/BLE/ble 5.jpg"),
-            require("@/app/assets/projects/BLE/ble 6.jpg"),
-            require("@/app/assets/projects/BLE/ble 7.jpg"),
-            require("@/app/assets/projects/BLE/ble 8.jpg"),
-          ],
-        }
-      : slug === "feed4me"
-      ? {
-          title: "Feed4Me - Digital Food Ecosystem",
-          icon: require("@/app/assets/FEED4ME.png"),
-          description:
-            "Feed4Me is an app-based digital food ecosystem platform that connects farmers, retailers, NGOs, and consumers, focusing on smooth crop sell-purchase, efficient storage facilities, and food waste management. It offers comprehensive features including real-time weather alerts, a news blog, a Crop Encyclopedia, chat functionality, multilingual support, and mapping tools. Feed4Me promotes transparency and collaboration across the food supply chain by enabling direct communication and transactions among participants. It empowers customers to access fresh farm produce, NGOs to monitor and redistribute food waste, and farmers to sell their crops directly while managing storage and learning from educational content. The platform supports sustainable practices by reducing food waste, improving efficiency, and creating passive income opportunities through shared storage. Overall, Feed4Me aims to foster a smarter, more sustainable food future by integrating technology, real-time data, and community participation for all stakeholders in the food ecosystem.",
-          link: "https://docs.google.com/document/d/1gYl99UrFIsS4HHEOWRQzdk2NtEcPepuVNsL6sbVVlX4/edit?usp=sharing",
-          features: (
-            <ul className="list-disc pl-5">
-              {" "}
-              <li>
-                {" "}
-                <b>Customer App Features</b>:{" "}
-                <ul className="list-disc pl-5">
-                  {" "}
-                  <li>
-                    <b>Fresh produce access</b>: Direct connection with local
-                    farmers for farm-fresh vegetables and grains.
-                  </li>{" "}
-                  <li>
-                    <b>Food waste reporting</b>: Easily report food wastage to
-                    help improve sustainability.
-                  </li>{" "}
-                  <li>
-                    <b>Storage rental for passive income</b>: Rent or share
-                    storage spaces for agricultural produce.
-                  </li>{" "}
-                  <li>
-                    <b>Real-time chat</b>: Instant communication with farmers
-                    and storage providers for coordination.
-                  </li>{" "}
-                  <li>
-                    <b>Order tracking</b>: Track your orders and deliveries with
-                    automated alerts.
-                  </li>{" "}
-                  <li>
-                    <b>Multilingual support</b>: Access the app in your
-                    preferred language for better usability.
-                  </li>{" "}
-                </ul>{" "}
-              </li>{" "}
-              <br />
-              <li>
-                {" "}
-                <b>NGO App Features</b>:{" "}
-                <ul className="list-disc pl-5">
-                  {" "}
-                  <li>
-                    <b>Food waste tracking</b>: Monitor surplus and wasted food
-                    with real-time data and reports.
-                  </li>{" "}
-                  <li>
-                    <b>Food distribution management</b>: Coordinate collection
-                    and delivery of food donations efficiently.
-                  </li>{" "}
-                  <li>
-                    <b>Feed humans and cattle</b>: Channel excess food to both
-                    people in need and livestock.
-                  </li>{" "}
-                  <li>
-                    <b>Collaboration and communication</b>: Seamless interaction
-                    with farmers, storage, and donors via chat and
-                    notifications.
-                  </li>{" "}
-                  <li>
-                    <b>Integration with food waste management system</b>:
-                    Supports eco-friendly, transparent food redistribution.
-                  </li>{" "}
-                </ul>{" "}
-              </li>{" "}
-              <br />
-              <li>
-                {" "}
-                <b>Farmer App Features</b>:{" "}
-                <ul className="list-disc pl-5">
-                  {" "}
-                  <li>
-                    <b>Crop sell/trade marketplace</b>: Easily sell and trade
-                    crops directly without brokers.
-                  </li>{" "}
-                  <li>
-                    <b>Storage access and mapping</b>: Find and book nearby
-                    storage facilities with geolocation.
-                  </li>{" "}
-                  <li>
-                    <b>Food waste reporting</b>: Report surplus crops to reduce
-                    waste.
-                  </li>{" "}
-                  <li>
-                    <b>Learning resources</b>: Access YouTube videos, Crop
-                    Encyclopedia, and government scheme info.
-                  </li>{" "}
-                  <li>
-                    <b>Real-time chat</b>: Communicate with customers and
-                    storage owners for efficient coordination.
-                  </li>{" "}
-                  <li>
-                    <b>Weather alerts</b>: Get location-specific weather
-                    forecasts to plan farming activities.
-                  </li>{" "}
-                  <li>
-                    <b>Secure payment facility</b>: Safe, integrated digital
-                    payments between farmers and buyers.
-                  </li>{" "}
-                  <li>
-                    <b>Multilingual support</b>: Interface tailored for various
-                    local languages.
-                  </li>{" "}
-                  <li>
-                    <b>News blog</b>: Stay updated with the latest
-                    agriculture-related news and trends.
-                  </li>{" "}
-                </ul>{" "}
-              </li>{" "}
-            </ul>
-          ),
-          Technologies: [
-            {
-              name: "React Native",
-              link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
-            },
-            {
-              name: "TypeScript",
-              link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-plain.svg",
-            },
-            {
-              name: "Tailwind CSS",
-              link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
-            },
-            {
-              name: "Expo",
-              link: "",
-            },
-            {
-              name: "AWS",
-              link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
-            },
-            {
-              name: "Docker",
-              link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg",
-            },
-            {
-              name: "MongoDB",
-              link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
-            },
-          ],
-          images: [
-            require("@/app/assets/projects/FEED4ME/one.jpeg"),
-            require("@/app/assets/projects/FEED4ME/two.jpeg"),
-            require("@/app/assets/projects/FEED4ME/three.jpeg"),
-          ],
-        }
-      : null;
+  const AppDetails: ProjectDetail | null = slug ? PROJECT_DETAILS[slug] : null;
 
   if (!slug || !AppDetails) {
     return (
@@ -502,58 +32,274 @@ function ProjectPageContent() {
     );
   }
   return (
-    <div className="p-5 bg-black pt-9 text-white md:px-28 max-md:px-5">
-      {/* {AppDetails?.icon && (
-        <Image
-          src={AppDetails?.icon}
-          blurDataURL={AppDetails?.icon?.blurDataURL}
-          className="w-[150px] h-[150px] rounded-xl mb-6"
-          alt={"Icon"}
-        />
-      )} */}
-      <div className="flex flex-col gap-3">
-        <h1 className="text-4xl font-bold my-2">{AppDetails?.title}</h1>
-        <div className="flex flex-wrap gap-2">
-          {AppDetails?.Technologies?.map((Skill, index) => {
-            return (
+    <div className="relative min-h-screen bg-black text-white p-5 pt-32 md:px-28 max-md:px-5 overflow-x-clip">
+      {/* Background Decorative Glows */}
+      <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-600/10 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute bottom-1/4 right-0 w-80 h-80 bg-purple-600/10 rounded-full blur-[100px] pointer-events-none" />
+
+      <Link
+        href="/Projects"
+        className="inline-flex items-center gap-2 text-slate-400 hover:text-white transition-colors mb-12 group relative z-20"
+      >
+        <div className="p-2 bg-slate-900 rounded-full group-hover:bg-slate-800 transition-colors">
+          <BackIcon size={18} />
+        </div>
+        <span className="font-medium">Back to Projects</span>
+      </Link>
+
+      <div className="relative z-10 mb-16">
+        <div className="max-w-4xl">
+          <p className="text-sm font-bold text-blue-500 uppercase tracking-[0.3em] mb-4">
+            Case Study
+          </p>
+          <h1 className="text-4xl md:text-6xl font-black text-white mb-6 leading-[1.1]">
+            {AppDetails?.title.split(/[:\s]-|:/)[0]}{" "}
+            <span className="text-slate-500 italic">
+              {AppDetails?.title.split(/[:\s]-|:/)[1] || "Project"}
+            </span>
+          </h1>
+
+          <div className="flex flex-wrap gap-3 mb-10">
+            {AppDetails?.Technologies?.map((Skill, index) => (
               <span
                 key={index}
-                className="gap-2 flex justify-center items-center bg-slate-900 rounded-full w-fit px-2 py-1"
+                className="gap-2 flex justify-center items-center bg-slate-900/80 backdrop-blur-sm border border-slate-800 rounded-full px-4 py-1.5 hover:border-slate-600 transition-colors"
               >
                 {Skill.link && (
                   <Image
                     src={Skill.link}
-                    width={15}
-                    height={15}
-                    className="aspect-square"
+                    width={16}
+                    height={16}
+                    className="aspect-square transition-all"
                     alt={Skill.name}
                   />
                 )}
-                <p className="text-[12px] text-slate-400">{Skill.name}</p>
+                <p className="text-xs font-semibold text-slate-300 uppercase tracking-wider">
+                  {Skill.name}
+                </p>
               </span>
-            );
-          })}
+            ))}
+          </div>
+
+          {AppDetails?.link && (
+            <Link href={AppDetails?.link} target="_blank" className="w-fit">
+              <MagicButton icon={ExternalLink}>Download App</MagicButton>
+            </Link>
+          )}
         </div>
-        {AppDetails?.link && (
-          <Link href={AppDetails?.link} target="_blank">
-            <Button className="my-2 bg-gray-800 hover:bg-gray-700 text-white">
-              <div className="flex gap-3 items-center justify-center">
-                <ExternalLink size={20} /> Download app
-              </div>
-            </Button>
-          </Link>
-        )}
       </div>
 
       <Coursoul Data={AppDetails?.images} landscape={slug === "feed4me"} />
 
-      <p className="text-xl font-bold my-2">Description</p>
-      <p className="text-slate-300">{AppDetails?.description}</p>
+      <div className="flex mt-20 relative">
+        <aside className="hidden lg:block w-52 shrink-0 sticky top-10 h-fit">
+          <div className="flex flex-col gap-4 border-l border-slate-800 pl-6">
+            <p className="text-xs font-bold text-slate-500 uppercase tracking-widest mb-2">
+              On this page
+            </p>
+            <a
+              href="#description"
+              className="text-slate-400 hover:text-white transition-colors text-sm font-medium py-1"
+            >
+              Description
+            </a>
+            {AppDetails.problem && (
+              <a
+                href="#problem"
+                className="text-slate-400 hover:text-white transition-colors text-sm font-medium py-1"
+              >
+                The Problem
+              </a>
+            )}
+            {AppDetails.solution && (
+              <a
+                href="#solution"
+                className="text-slate-400 hover:text-white transition-colors text-sm font-medium py-1"
+              >
+                The Solution
+              </a>
+            )}
+            <a
+              href="#features"
+              className="text-slate-400 hover:text-white transition-colors text-sm font-medium py-1"
+            >
+              Key Features
+            </a>
+            {AppDetails.architecture && (
+              <a
+                href="#architecture"
+                className="text-slate-400 hover:text-white transition-colors text-sm font-medium py-1"
+              >
+                Architecture
+              </a>
+            )}
+            {AppDetails.challenges && (
+              <a
+                href="#challenges"
+                className="text-slate-400 hover:text-white transition-colors text-sm font-medium py-1"
+              >
+                Challenges
+              </a>
+            )}
+            {AppDetails.audience && (
+              <a
+                href="#audience"
+                className="text-slate-400 hover:text-white transition-colors text-sm font-medium py-1"
+              >
+                Target Audience
+              </a>
+            )}
+            {AppDetails.conclusion && (
+              <a
+                href="#conclusion"
+                className="text-slate-400 hover:text-white transition-colors text-sm font-medium py-1"
+              >
+                Conclusion
+              </a>
+            )}
+          </div>
+        </aside>
 
-      <section className="my-20 rounded-xl ">
-        <h2 className="text-2xl font-bold my-2">Features</h2>
-        {AppDetails?.features}
-      </section>
+        {/* Content Sections Area */}
+        <div className="flex-1 flex flex-col relative">
+          {/* Vertical Journey Line */}
+          <div className="absolute left-[23px] top-6 bottom-32 w-px bg-gradient-to-b from-slate-800 via-slate-800 to-transparent hidden md:block" />
+
+          <section
+            id="description"
+            className="mb-20 flex flex-col gap-4 relative"
+          >
+            <div className="flex items-center gap-4">
+              <div className="p-3 bg-slate-900 rounded-2xl z-10 border border-slate-800 shadow-xl group-hover:border-blue-500 transition-colors">
+                <PenTool size={22} className="text-blue-400" />
+              </div>
+              <h2 className="text-2xl font-bold">Description</h2>
+            </div>
+            <div className="md:pl-16">
+              <p className="text-slate-300 leading-relaxed text-lg font-medium">
+                {AppDetails?.description}
+              </p>
+            </div>
+          </section>
+
+          {AppDetails.problem && (
+            <section
+              id="problem"
+              className="mb-20 flex flex-col gap-4 relative"
+            >
+              <div className="flex items-center gap-4">
+                <div className="p-3 bg-slate-900 rounded-2xl z-10 border border-slate-800 shadow-xl">
+                  <AlertCircle size={22} className="text-red-400" />
+                </div>
+                <h2 className="text-2xl font-bold">The Problem</h2>
+              </div>
+              <div className="md:pl-16">
+                <div className="p-6 md:p-8 bg-slate-900/30 rounded-3xl md:rounded-[2rem] border border-slate-800/50 backdrop-blur-sm">
+                  {AppDetails.problem}
+                </div>
+              </div>
+            </section>
+          )}
+
+          {AppDetails.solution && (
+            <section
+              id="solution"
+              className="mb-20 flex flex-col gap-4 relative"
+            >
+              <div className="flex items-center gap-4">
+                <div className="p-3 bg-slate-900 rounded-2xl z-10 border border-slate-800 shadow-xl">
+                  <Lightbulb size={22} className="text-yellow-400" />
+                </div>
+                <h2 className="text-2xl font-bold">The Solution</h2>
+              </div>
+              <div className="md:pl-16">
+                <div className="p-6 md:p-8 bg-slate-900/30 rounded-3xl md:rounded-[2rem] border border-slate-800/50 backdrop-blur-sm transition-all hover:bg-slate-900/40">
+                  {AppDetails.solution}
+                </div>
+              </div>
+            </section>
+          )}
+
+          <section id="features" className="mb-20 flex flex-col gap-6 relative">
+            <div className="flex items-center gap-4">
+              <div className="p-3 bg-slate-900 rounded-2xl z-10 border border-slate-800 shadow-xl">
+                <Target size={22} className="text-purple-400" />
+              </div>
+              <h2 className="text-2xl font-bold">Key Features</h2>
+            </div>
+            <div className="md:pl-16">{AppDetails?.features}</div>
+          </section>
+
+          {AppDetails.architecture && (
+            <section
+              id="architecture"
+              className="mb-20 flex flex-col gap-6 relative"
+            >
+              <div className="flex items-center gap-4">
+                <div className="p-3 bg-slate-900 rounded-2xl z-10 border border-slate-800 shadow-xl">
+                  <Cpu size={22} className="text-green-400" />
+                </div>
+                <h2 className="text-2xl font-bold">Technical Architecture</h2>
+              </div>
+              <div className="md:pl-16">{AppDetails.architecture}</div>
+            </section>
+          )}
+
+          {AppDetails.challenges && (
+            <section
+              id="challenges"
+              className="mb-20 flex flex-col gap-4 relative"
+            >
+              <div className="flex items-center gap-4">
+                <div className="p-3 bg-slate-900 rounded-2xl z-10 border border-slate-800 shadow-xl">
+                  <Cpu size={22} className="text-orange-400" />
+                </div>
+                <h2 className="text-2xl font-bold">Challenges & Privacy</h2>
+              </div>
+              <div className="md:pl-16">
+                <div className="p-6 md:p-8 bg-slate-900/30 rounded-3xl md:rounded-[2rem] border border-slate-800/50 backdrop-blur-sm">
+                  {AppDetails.challenges}
+                </div>
+              </div>
+            </section>
+          )}
+
+          {AppDetails.audience && (
+            <section
+              id="audience"
+              className="mb-10 flex flex-col gap-4 relative"
+            >
+              <div className="flex items-center gap-4">
+                <div className="p-3 bg-slate-900 rounded-2xl z-10 border border-slate-800 shadow-xl">
+                  <Users size={22} className="text-pink-400" />
+                </div>
+                <h2 className="text-2xl font-bold">Target Audience</h2>
+              </div>
+              <div className="md:pl-16">
+                <div className="p-6 md:p-8 bg-slate-900/30 rounded-3xl md:rounded-[2rem] border border-slate-800/50 backdrop-blur-sm">
+                  {AppDetails.audience}
+                </div>
+              </div>
+            </section>
+          )}
+        </div>
+      </div>
+      {AppDetails.conclusion && (
+        <section
+          id="conclusion"
+          className="my-24 p-6 md:p-10 bg-gradient-to-br from-slate-900 to-black rounded-3xl md:rounded-[3rem] border border-slate-800 relative overflow-hidden group"
+        >
+          <div className="absolute top-0 right-0 p-4 opacity-10 transition-opacity">
+            <CheckCircle2 size={150} />
+          </div>
+          <div className="relative z-10">
+            <h2 className="text-3xl font-black mb-8 flex items-center gap-3 text-white tracking-tight">
+              Conclusion
+            </h2>
+            {AppDetails.conclusion}
+          </div>
+        </section>
+      )}
     </div>
   );
 }

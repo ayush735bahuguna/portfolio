@@ -1,6 +1,7 @@
+"use client";
 import { SendHorizonal } from "lucide-react";
 import React from "react";
-import { Button } from "../ui/button";
+import { MagicButton } from "../MagicButton";
 import { Input } from "../ui/input";
 
 export default function Contact() {
@@ -33,14 +34,14 @@ export default function Contact() {
               placeholder="Message"
               required={true}
             />
-            <Button
-              type={"submit"}
-              variant={"secondary"}
-              className="w-full bg-gray-800 hover:bg-gray-700 text-white"
+            <MagicButton
+              type="submit"
+              variant="secondary"
+              className="w-full"
+              icon={SendHorizonal}
             >
-              Send &nbsp;
-              <SendHorizonal size={17} color="white" />
-            </Button>
+              Send
+            </MagicButton>
           </form>
         </div>
       </div>
