@@ -3,8 +3,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
 import { Manrope } from "next/font/google";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import LayoutContent from "@/components/LayoutContent";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const manRopeFont = Manrope({
@@ -87,12 +86,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${manRopeFont.className} antialiased`}>
-        <div className="max-w-7xl mx-auto">
-          <Navbar />
-          {children}
-          <Footer />
-        </div>
+      <body
+        className={`${manRopeFont.className} antialiased bg-black text-white`}
+      >
+        <LayoutContent>{children}</LayoutContent>
         <SpeedInsights />
         <Analytics />
         <script
